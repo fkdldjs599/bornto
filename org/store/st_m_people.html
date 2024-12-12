@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header s_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">문자 전송</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="m_people" class="page">
+
+        <div class="pd15">
+    
+            <ul class="cm_ul">
+    
+                <li class="cm_li on">식단 관리</li>
+    
+                <li class="cm_li">운동 관리</li>
+    
+            </ul>
+    
+    
+    
+            <div class="tab_wrap">
+    
+                <div class="tab on">
+    
+                    <div class="mp_wrap">
+    
+                        <div class="mp_line">
+    
+                            <div class="mp_top">
+    
+                                <span class="ml_left vt_mid">2024.08.31</span>
+    
+                                <span class="ml_right vt_mid">( 총 3000kcal)</span>
+    
+                            </div>
+    
+                            <div class="mp_bot">
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">아침｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">점심｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">저녁｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="mp_line">
+    
+                            <div class="mp_top">
+    
+                                <span class="ml_left vt_mid">2024.08.30</span>
+    
+                                <span class="ml_right vt_mid">( 총 3000kcal)</span>
+    
+                            </div>
+    
+                            <div class="mp_bot">
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">아침｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">점심｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">저녁｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="mp_line">
+    
+                            <div class="mp_top">
+    
+                                <span class="ml_left vt_mid">2024.08.29</span>
+    
+                                <span class="ml_right vt_mid">( 총 3000kcal)</span>
+    
+                            </div>
+    
+                            <div class="mp_bot">
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">아침｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">점심｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">저녁｜100kcal</div>
+    
+                                        <div class="ml_top">순탄수 0g /  단백질 20g / 지방 2g</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn food">
+    
+                                            <img src="/img/pg_btn.png" alt="칼로리 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="page_wrap">
+    
+                        <button type="button" class="p_btns prev">
+    
+                            <img src="/img/btn_prev.png" alt="이전 페이지로">
+    
+                        </button>
+    
+                        <div class="num_wrap vt_mid">
+    
+                            <a href="" class="num">1</a>
+    
+                            <a href="" class="num on">2</a>
+    
+                            <a href="" class="num">3</a>
+    
+                        </div>
+    
+                        <button type="button" class="p_btns next">
+    
+                            <img src="/img/btn_next.png" alt="다음 페이지로">
+    
+                        </button>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="tab">
+    
+                    <div class="mp_wrap">
+    
+                        <div class="mp_line">
+    
+                            <div class="mp_top">
+    
+                                <span class="ml_left vt_mid">2024.08.31</span>
+    
+                                <span class="ml_right vt_mid">( 하 6s/ 상 2s/ 기 1s)</span>
+    
+                            </div>
+    
+                            <div class="mp_bot">
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">하체｜바벨 백스쿼트</div>
+    
+                                        <div class="ml_bot gray">50kg x 10회 x 3세트</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn exercise">
+    
+                                            <img src="/img/pg_btn.png" alt="운동 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">하체｜바벨 백스쿼트</div>
+    
+                                        <div class="ml_bot gray">50kg x 10회 x 3세트</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn exercise">
+    
+                                            <img src="/img/pg_btn.png" alt="운동 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="mp_line">
+    
+                            <div class="mp_top">
+    
+                                <span class="ml_left vt_mid">2024.08.30</span>
+    
+                                <span class="ml_right vt_mid">( 하 6s/ 상 2s/ 기 1s)</span>
+    
+                            </div>
+    
+                            <div class="mp_bot">
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">하체｜바벨 백스쿼트</div>
+    
+                                        <div class="ml_bot gray">50kg x 10회 x 3세트</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn exercise">
+    
+                                            <img src="/img/pg_btn.png" alt="운동 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">하체｜바벨 백스쿼트</div>
+    
+                                        <div class="ml_bot gray">50kg x 10회 x 3세트</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn exercise">
+    
+                                            <img src="/img/pg_btn.png" alt="운동 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="mp_line">
+    
+                            <div class="mp_top">
+    
+                                <span class="ml_left vt_mid">2024.08.29</span>
+    
+                                <span class="ml_right vt_mid">( 하 6s/ 상 2s/ 기 1s)</span>
+    
+                            </div>
+    
+                            <div class="mp_bot">
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">하체｜바벨 백스쿼트</div>
+    
+                                        <div class="ml_bot gray">50kg x 10회 x 3세트</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn exercise">
+    
+                                            <img src="/img/pg_btn.png" alt="운동 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="mb_block">
+    
+                                    <div class="mbb_left vt_mid">
+    
+                                        <div class="ml_top">하체｜바벨 백스쿼트</div>
+    
+                                        <div class="ml_bot gray">50kg x 10회 x 3세트</div>
+    
+                                    </div>
+    
+                                    <div class="mbb_right vt_mid">
+    
+                                        <button type="button" class="pg_btn exercise">
+    
+                                            <img src="/img/pg_btn.png" alt="운동 추가">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="page_wrap">
+    
+                        <button type="button" class="p_btns prev">
+    
+                            <img src="/img/btn_prev.png" alt="이전 페이지로">
+    
+                        </button>
+    
+                        <div class="num_wrap vt_mid">
+    
+                            <a href="" class="num">1</a>
+    
+                            <a href="" class="num on">2</a>
+    
+                            <a href="" class="num">3</a>
+    
+                        </div>
+    
+                        <button type="button" class="p_btns next">
+    
+                            <img src="/img/btn_next.png" alt="다음 페이지로">
+    
+                        </button>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+        $('.white_box').click(function(){
+    
+            $('.feed_pop').addClass('on');
+    
+        });
+    
+    
+    
+        //회원관리 > 식단관리 > + 버튼
+    
+            $('#m_people .mp_bot .pg_btn').click(function(){
+    
+            if($(this).hasClass('food')){
+    
+                location.href="st_m_food.php";
+    
+            }else if($(this).hasClass('exercise')){
+    
+                location.href="st_m_exer.php";
+    
+            }
+    
+        });
+    
+    </script>
+
+
+
+</body>
+
+</html>

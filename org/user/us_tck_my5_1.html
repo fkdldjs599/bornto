@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">수강권 일시정지</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+
+    <section id="tck_stop" class="page tk_stop">
+
+        <div class="pd15">
+    
+            <div class="stop_block">
+    
+                <label class="stop_lab">정지 기간 설정</label>
+    
+                <div class="stop_date">
+    
+                    <input type="text" name="start_date" id="start_date" class="date" placeholder="시작일">
+    
+                    <span class="gap">~</span>
+    
+                    <input type="text" name="end_date" id="end_date" class="date" placeholder="종료일">
+    
+                </div>
+    
+                <script>
+    
+                    $(function(){
+    
+                        $('#start_date').datepicker({
+    
+                            dateFormat : 'yy.mm.dd',
+    
+                        });
+    
+                        $('#end_date').datepicker({
+    
+                            dateFormat : 'yy.mm.dd',
+    
+                        });
+    
+                    })
+    
+                </script>
+    
+            </div>
+    
+            <div class="stop_block">
+    
+                <h2 class="stop_h2">정지 전 꼭 확인해주세요!</h2>
+    
+                <div class="stop_txt">
+    
+                    - 일시정지 시작 날짜부터 예약이 불가합니다.<br><br>
+    
+    
+    
+                    - 무료 일시정지는 3개월에 한번(최대 1개월까지) 가능합니다.<br><br>
+    
+    
+    
+                    - 정지기간을 1개월 이상 설정하거나 이전 정지 종료일로부터 3개월 이내에 재정지시 추가 결제가 필요합니다.<br><br>
+    
+    
+    
+                    - 추가 결제시 최대 정지 가능 기간은 n개월입니다.
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+        <div class="ck_area">
+    
+            <input type="checkbox" name="stop_agree" id="stop_agree" class="ck_vo">
+    
+            <label for="stop_agree" class="label">위 모든 내용을 확인했으며 이에 동의합니다.</label>
+    
+        </div>
+    
+    
+    
+        <div class="btn_fixed">
+    
+            <button type="button" class="btn_common gray">정지 신청</button>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+        $('#stop_agree').change(function(){
+    
+            if($(this).is(":checked")){
+    
+                $('.tk_stop .btn_common').removeClass('gray');
+    
+            }else{
+    
+                $('.tk_stop .btn_common').addClass('gray');
+    
+            }
+    
+        });
+    
+    
+    
+        $('.tk_stop .btn_common').click(function(){
+    
+            if($(this).hasClass('gray')){
+    
+    
+    
+            }else{
+    
+                $('.pop2').addClass('on');
+    
+                $('.pop2 .p_h2').html("수강권 일시정지 하시겠습니까?<div class='sub'>일시정지 시작 날짜부터 예약이 불가합니다.</div>");
+    
+                $('.pop2 .btn2').text("확인");
+    
+            }
+    
+        });
+    
+    
+    
+        $('.pop2 .btn2').click(function(){
+    
+            $('.pop2').removeClass('on');
+    
+            $('.pop1').addClass('on');
+    
+            $('.pop1 .p_h2').html('수강권 일시정지가 완료되었습니다.<div class="sub">정지 기간 종료 전 해제는<br>이용지점 고객센터로 문의 부탁드립니다.</div>');
+    
+        });
+    
+    </script>
+
+    
+
+</body>
+
+</html>

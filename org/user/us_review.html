@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">리뷰 작성</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="review" class="page">
+
+        <div class="pd15">
+    
+            <div class="mc_wrap">
+    
+                <div class="mc_block">
+    
+                    <div class="mc1">회원님의 이름은 보이지 않고 닉네임으로 공유돼요!<br>3줄 이상 사진 첨부된 리뷰는 트레이너에게 큰 힘이 됩니다.</div>
+    
+                    <div class="mc2">기본: 300포인트  사진: 1,000 P  비포/애프터 첨부:10,000 P<br>비포애프터는 작성 후 1:1 문의에 포인트 요청 해주세요.</div>
+    
+                </div>
+    
+                <div class="mc_block">
+    
+                    <h2 class="h2">PT 수업에 만족 하셨나요?</h2>
+    
+                    <div class="w_area">
+    
+                        <div class="gray_bar">
+    
+                            <div class="w_wrap">
+    
+                                <input type="radio" name="rev" id="rev1" class="radio">
+    
+                                <label for="rev1" class="rev_lab">불만족</label>
+    
+                                <input type="radio" name="rev" id="rev2" class="radio">
+    
+                                <label for="rev2" class="rev_lab">아쉬움</label>
+    
+                                <input type="radio" name="rev" id="rev3" class="radio">
+    
+                                <label for="rev3" class="rev_lab">평균</label>
+    
+                                <input type="radio" name="rev" id="rev4" class="radio">
+    
+                                <label for="rev4" class="rev_lab">좋아요</label>
+    
+                                <input type="radio" name="rev" id="rev5" class="radio">
+    
+                                <label for="rev5" class="rev_lab">강력추천</label>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="sub2">선택해주세요.</div>
+    
+                        <script>
+    
+    
+    
+                        </script>
+    
+                    </div>
+    
+                </div><!--mc_block-->
+    
+    
+    
+                <div class="txt_area">
+    
+                    <div class="border">
+    
+                        <input type="text" name="nick" id="nick" value="가녀린 코끼리" class="nick">
+    
+                        <button type="button" class="cg_btn">변경 (최대 2회)</button>
+    
+                    </div>
+    
+                    <div class="sub">심한 욕설 등 비도덕적 행위는 적발 후 처벌의 대상이 될 수 있습니다.</div>
+    
+                    <div class="txt">
+    
+                        <div class="title">00회차 후기</div>
+    
+                        <textarea class="textarea" placeholder="리뷰를 작성해주세요."></textarea> 
+    
+                    </div>
+    
+    
+    
+                    <div class="file_wrap">
+    
+                        <input type="file" name="customFile" id="customFile" class="file">
+    
+                        <div class="wrap">
+    
+                            <label for="customFile" class="img_box f_btn">
+    
+                                <div class="grid">
+    
+                                    <img src="../../img/f_plus.png" alt="사진 추가">
+    
+                                    <div class="f_txt">사진 추가</div>
+    
+                                </div>
+    
+                            </label>
+    
+                            <!-- <div class="img_box ib">
+    
+                                <div class="grid">
+    
+                                    <img src="../../img/ex_img.png" alt="ex_img.png">
+    
+                                </div>
+    
+                                <button type="button" class="x_btn">
+    
+                                    <img src="../../img/remove_btn.png" alt="사진 삭제">
+    
+                                </button>
+    
+                            </div>
+    
+                            <div class="img_box ib">
+    
+                                <div class="grid">
+    
+                                    <img src="../../img/ex_img.png" alt="ex_img.png">
+    
+                                </div>
+    
+                                <button type="button" class="x_btn">
+    
+                                    <img src="../../img/remove_btn.png" alt="사진 삭제">
+    
+                                </button>
+    
+                            </div> -->
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    
+    
+        
+    
+        <div class="btn_fixed">
+    
+            <button type="button" class="btn_common">리뷰 작성</button>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+        $('#review .btn_common').click(function(){
+    
+            if($(this).hasClass('gray')){
+    
+    
+    
+            }else{
+    
+                $('.pop2').addClass('on');
+    
+                $('.pop2 .p_h2').html("리뷰를 작성하시겠습니까?");
+    
+                $('.pop2 .btn2').text("확인");
+    
+            }
+    
+        });
+    
+    
+    
+        $('.pop2 .btn2').click(function(){
+    
+            $('.pop2').removeClass('on');
+    
+            $('.pop1').addClass('on');
+    
+            $('.pop1 .p_h2').html("리뷰 작성이 완료되었습니다.<br>감사합니다.");
+    
+        })
+    
+    </script>
+
+
+
+    
+
+</body>
+
+</html>

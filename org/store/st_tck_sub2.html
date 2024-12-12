@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header s_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">수강권 상세</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+<!--정지된 수강권 보여주기용 페이지-->
+
+
+
+<section id="tck" class="page tk_sub">
+
+    <div class="pd15">
+
+        <div class="ticket_common">
+
+            <div class="pbb1 blue">1:1 · 30분 · 10회 · 일반</div>
+
+            <div class="pbb2">1:1 PT 10회</div>
+
+            <div class="pbb3 blue">2024. 05. 31 ~ 2024. 06. 30 (30일 남음) </div>
+
+            <div class="pbb4">
+
+                <span class="pbb4_sp">예약 가능 <span class="blue">5</span></span>
+
+                <span class="pbb4_sp">취소 가능 <span >10</span></span>
+
+                <span class="pbb4_sp">잔여 <span class="blue">6/10</span></span>
+
+            </div>
+
+        </div>
+
+
+
+        <ul class="ul_4">
+
+            <li class="li_4 on">예약내역</li>
+
+            <li class="li_4">기본정보</li>
+
+            <li class="li_4">결제정보</li>
+
+            <li class="li_4">정지</li>
+
+        </ul>
+
+
+
+        <div class="tab_wrap">
+
+            <div class="tab tab1 on">
+
+                <div class="sel_area">
+
+                    <select class="slt2 fs12">
+
+                        <option>전체</option>
+
+                        <option>예약</option>
+
+                        <option>출석</option>
+
+                        <option>결석</option>
+
+                        <option>준결석</option>
+
+                        <option>예약취소</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="tb1_list">
+
+                    <div class="tb1_block">
+
+                        <div class="tb1_left vt_mid">
+
+                            <div class="tb1_1">2024. 05. 10(수) 18:00 ~ 18:30</div>
+
+                            <div class="tb1_2">트레이너이름 트레이너</div>
+
+                            <div class="tb1_3">1:1PT 10회</div>
+
+                        </div>
+
+                        <div class="tb1_right vt_mid">예약</div>
+
+                    </div>
+
+                    <div class="tb1_block">
+
+                        <div class="tb1_left vt_mid">
+
+                            <div class="tb1_1">2024. 05. 10(수) 18:00 ~ 18:30</div>
+
+                            <div class="tb1_2">트레이너이름 트레이너</div>
+
+                            <div class="tb1_3">1:1PT 10회</div>
+
+                        </div>
+
+                        <div class="tb1_right vt_mid">출석</div>
+
+                    </div>
+
+                    <div class="tb1_block">
+
+                        <div class="tb1_left vt_mid">
+
+                            <div class="tb1_1">2024. 05. 10(수) 18:00 ~ 18:30</div>
+
+                            <div class="tb1_2">트레이너이름 트레이너</div>
+
+                            <div class="tb1_3">1:1PT 10회</div>
+
+                        </div>
+
+                        <div class="tb1_right vt_mid">결석</div>
+
+                    </div>
+
+                    <div class="tb1_block">
+
+                        <div class="tb1_left vt_mid">
+
+                            <div class="tb1_1">2024. 05. 10(수) 18:00 ~ 18:30</div>
+
+                            <div class="tb1_2">트레이너이름 트레이너</div>
+
+                            <div class="tb1_3">1:1PT 10회</div>
+
+                        </div>
+
+                        <div class="tb1_right vt_mid">예약취소</div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="page_wrap">
+
+                    <button type="button" class="p_btns prev">
+
+                        <img src="../../img/btn_prev.png" alt="이전 페이지로">
+
+                    </button>
+
+                    <div class="num_wrap vt_mid">
+
+                        <a href="" class="num">1</a>
+
+                        <a href="" class="num on">2</a>
+
+                        <a href="" class="num">3</a>
+
+                    </div>
+
+                    <button type="button" class="p_btns next">
+
+                        <img src="../../img/btn_next.png" alt="다음 페이지로">
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="tab tab2 form">
+
+                <div class="tk_area">
+
+                    <div class="tk_block">
+
+                        <label for="start_day" class="tk_lab">이용 시작일</label>
+
+                        <div class="i_wrap">
+
+                            <input type="text" name="start_day" id="start_day" class="date" value="2024.03.26">
+
+                            <img src="../../img/select_down2.png">
+
+                        </div>
+
+                    </div>
+
+                    <div class="tk_block">
+
+                        <label for="start_day" class="tk_lab">이용 종료일</label>
+
+                        <div class="i_wrap">
+
+                            <input type="text" name="end_day" id="end_day" class="date" value="2024.05.25">
+
+                            <img src="../../img/select_down2.png">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <script>
+
+                        $(function(){
+
+                            $('#start_day').datepicker({
+
+                                dateFormat : 'yy.mm.dd',
+
+                            });
+
+                            $('#end_day').datepicker({
+
+                                dateFormat : 'yy.mm.dd',
+
+                            });
+
+                        })
+
+                    </script>
+
+
+
+                    <div class="tk_block half mr18">
+
+                        <label for="num1" class="tk_lab">잔여 횟수</label>
+
+                        <div class="number_wrap">
+
+                            <button type="button" class="n_btn minus">
+
+                                <img src="../../img/btn_minus.png" alt="수량 감소">
+
+                            </button>
+
+                            <input type="number" name="num1" id="num1" class="num" value="5">
+
+                            <button type="button" class="n_btn plus">
+
+                                <img src="../../img/btn_plus.png" alt="수량 증가">
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tk_block half">
+
+                        <label for="num2" class="tk_lab">전체 횟수</label>
+
+                        <div class="number_wrap">
+
+                            <button type="button" class="n_btn minus">
+
+                                <img src="../../img/btn_minus.png" alt="수량 감소">
+
+                            </button>
+
+                            <input type="number" name="num2" id="num2" class="num" value="10">
+
+                            <button type="button" class="n_btn plus">
+
+                                <img src="../../img/btn_plus.png" alt="수량 증가">
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="tk_block">
+
+                        <label for="num3" class="tk_lab">예약 취소 가능 횟수</label>
+
+                        <div class="number_wrap">
+
+                            <button type="button" class="n_btn minus">
+
+                                <img src="../../img/btn_minus.png" alt="수량 감소">
+
+                            </button>
+
+                            <input type="number" name="num3" id="num3" class="num" value="5">
+
+                            <button type="button" class="n_btn plus">
+
+                                <img src="../../img/btn_plus.png" alt="수량 증가">
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="tk_block">
+
+                        <label for="staff" class="tk_lab">담당 직원</label>
+
+                        <div class="mb10">
+
+                            <select name="staff" id="staff" class="slt2">
+
+                                <option>직원 선택</option>
+
+                                <option selected>홍길동</option>
+
+                                <option>홍길동</option>
+
+                                <option>홍길동</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="btn_fixed">
+
+                    <button type="button" class="btn_common" onclick="location.href='st_tck_sub2.html'">저장</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="tab tab3">
+
+                <div class="p_block">
+
+                    <div class="pb_left vt_mid">결제일시</div>
+
+                    <div class="pb_right vt_mid">2024. 05. 31</div>
+
+6  30         </div>
+
+                <div class="p_block">
+
+                    <div class="pb_left vt_mid">판매가</div>
+
+                    <div class="pb_right vt_mid">590,000원</div>
+
+                </div>
+
+                <div class="p_block">
+
+                    <div class="pb_left vt_mid">결제총액</div>
+
+                    <div class="pb_right vt_mid">590,000원</div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="tab tab4 form">
+
+                <div class="tk_area">
+
+                    <div class="tk_block">
+
+                        <label for="stop_start" class="tk_lab">정지 시작일</label>
+
+                        <div class="i_wrap">
+
+                            <input type="text" name="stop_start" id="stop_start" class="date" value="2024.05.16" disabled>
+
+                            <img src="../../img/select_down2.png">
+
+                        </div>
+
+                    </div>
+
+                    <div class="tk_block">
+
+                        <label for="stop_end" class="tk_lab">정지 종료일</label>
+
+                        <div class="i_wrap">
+
+                            <input type="text" name="stop_end" id="stop_end" class="date" value="2024.06.15" disabled>
+
+                            <img src="../../img/select_down2.png">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <script>
+
+                    $(function(){
+
+                        $('#stop_start').datepicker({
+
+                            dateFormat : 'yy.mm.dd',
+
+                        });
+
+                        $('#stop_end').datepicker({
+
+                            dateFormat : 'yy.mm.dd',
+
+                        });
+
+                    })
+
+                </script>
+
+
+
+                <div class="btn_fixed">
+
+                    <button type="button" class="btn_common">복귀하기</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+    $('#tck .n_btn.minus').click(function(){
+
+        var val = $(this).next('.num').val();
+
+        
+
+        if(val > 1){
+
+            var val2 = parseInt(val) - parseInt(1);
+
+            $(this).next('.num').val(val2);
+
+        }
+
+    });
+
+    $('#tck .n_btn.plus').click(function(){
+
+        var val = $(this).prev('.num').val();
+
+
+
+        var val2 = parseInt(val) + parseInt(1);
+
+        $(this).prev('.num').val(val2);
+
+    });
+
+
+
+    $('.tab4 .btn_common').click(function(){
+
+        $('.pop1').addClass('on');
+
+        $('.pop1 .p_h2').text('복귀일이 지정되었습니다.');
+
+    });
+
+
+
+    $('.pop1 .p_btn').click(function(){
+
+        location.href='st_tck_sub.html';
+
+    });
+
+</script>
+
+
+    <!-- <footer class="footer">
+        <a href="st_index.html" class="foot_a">
+            <img src="../../img/nav1_st.png">
+            <div class="foot_t">홈</div>
+        </a>
+        <a href="st_schedule.html" class="foot_a">
+            <img src="../../img/nav2_st.png">
+            <div class="foot_t">일정</div>
+        </a>
+        <a href="st_people.html" class="foot_a on">
+            <img src="../../img/nav3_st_on.png">
+            <div class="foot_t">인원</div>
+        </a>
+        <a href="st_tck_list.html" class="foot_a ">
+            <img src="../../img/nav4_st.png" style="width:24px;">
+            <div class="foot_t">수강권</div>
+        </a>
+        <a href="st_mypage.html" class="foot_a ">
+            <img src="../../img/nav5_st.png">
+            <div class="foot_t">마이</div>
+        </a>
+    </footer> -->
+
+
+
+</body>
+
+</html>

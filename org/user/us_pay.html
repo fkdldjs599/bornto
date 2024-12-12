@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">멤버십 선택</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+<!--멤버십 결제창-->
+
+<section id="pay" class="form">
+
+
+
+    <form>
+
+        <div class="pb_wrap">
+
+            <div class="pay_block">
+
+                <label class="pay_lab">결제 상세</label>
+
+                <div class="pb_con">
+
+                    <div class="mb10">
+
+                        <div class="pb_left vt_mid">3개월 멤버십</div>
+
+                        <div class="pb_right vt_mid"><span class="fw500">199,000</span>원</div>
+
+                    </div>
+
+                    <div class="mb10">
+
+                        <div class="pb_left vt_mid">개인락커(3개월)</div>
+
+                        <div class="pb_right vt_mid"><span class="fw500">30,000</span>원</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="pay_block">
+
+                <label class="pay_lab half">
+
+                    포인트
+
+                    <button type="button" class="all_use">전액사용</button>
+
+                </label>
+
+                <div class="point vt_top">
+
+                    <input type="number" name="point" id="point" class="point_box" value="0">
+
+                    <span class="pot vt_mid">P</span>
+
+
+
+                    <div class="gray">잔여 : 0P</div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="pay_block">
+
+                <label class="pay_lab">결제수단</label>
+
+                <div class="pb_con">
+
+                    <div class="way_wrap">
+
+                        <div class="line">
+
+                            <input type="radio" name="way1" id="way1_1" class="ck_v">
+
+                            <label for="way1_1" class="w_lab">계좌</label>
+
+                        </div>
+
+                        <div class="way mySwiper2">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide p_box">
+
+                                    <input type="radio" name="way1_1" id="way1_1_1" class="w_box" checked>
+
+                                    <label for="way1_1_1" class="wb_lab">
+
+                                        <div class="name">국민은행</div>
+
+                                        <div class="num">************3505</div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="swiper-slide p_box">
+
+                                    <input type="radio" name="way1_1" id="way1_1_2" class="w_box">
+
+                                    <label for="way1_1_2" class="wb_lab">
+
+                                        <div class="name">국민은행</div>
+
+                                        <div class="num">************3505</div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="swiper-slide p_box">
+
+                                    <input type="radio" name="way1_1" id="way1_1_3" class="w_box">
+
+                                    <label for="way1_1_3" class="wb_lab">
+
+                                        <div class="name">국민은행</div>
+
+                                        <div class="num">************3505</div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="swiper-slide p_box">
+
+                                    <a href="us_pay_way.html" class="wb_lab">
+
+                                        <div class="grid">
+
+                                            <img src="../../img/pay_add.png" alt="추가" class="icon">
+
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="cash">
+
+                                <input type="checkbox" name="cash" id="cash" class="rd_o">
+
+                                <label for="cash" class="w_lab">현금영수증 신청</label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="way_wrap">
+
+                        <div class="line">
+
+                            <input type="radio" name="way1" id="way1_2" class="ck_v">
+
+                            <label for="way1_2" class="w_lab">카드</label>
+
+
+
+                            <!-- <div class="sub">
+
+                                <img src="../../img/icon_info2_bk.png">
+
+                                <span class="vt_mid">카드 결제시 부가세 10%</span>
+
+                            </div> -->
+
+                        </div>
+
+                        <div class="way mySwiper2">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide p_box">
+
+                                    <input type="radio" name="way1_2" id="way1_2_1" class="w_box" checked>
+
+                                    <label for="way1_2_1" class="wb_lab">
+
+                                        <div class="name">KB 국민카드</div>
+
+                                        <div class="num">************3505</div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="swiper-slide p_box">
+
+                                    <input type="radio" name="way1_2" id="way1_2_2" class="w_box">
+
+                                    <label for="way1_2_2" class="wb_lab">
+
+                                        <div class="name">KB 국민카드</div>
+
+                                        <div class="num">************3505</div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="swiper-slide p_box">
+
+                                    <input type="radio" name="way1_2" id="way1_2_3" class="w_box">
+
+                                    <label for="way1_2_3" class="wb_lab">
+
+                                        <div class="name">KB 국민카드</div>
+
+                                        <div class="num">************3505</div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="swiper-slide p_box">
+
+                                    <a href="us_pay_way.html" class="wb_lab">
+
+                                        <div class="grid">
+
+                                            <img src="../../img/pay_add.png" alt="추가" class="icon">
+
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="pay_block">
+
+                <div class="fs0">
+
+                    <label class="pay_lab half2">총 결제금액</label>
+
+                    <div class="result vt_mid">213,800원</div>
+
+                </div>
+
+                <div class="pb_con">
+
+                    <label class="pay_lab2">추천회원</label>
+
+
+
+                <!--03/11 회원 코드 입력방식으로 변경 (업체요청)-->
+
+                    <input type="text" name="code" id="code" class="code" placeholder="회원코드">
+
+                <!--03/11 회원 코드 입력방식으로 변경 (업체요청)-->
+
+
+
+                    <div class="p_info">
+
+                        <div class="i_top">
+
+                            <img src="../../img/icon_info2_bk.png">
+
+                            <span class="vt_mid">추천인 혜택</span>
+
+                        </div>
+
+                        <div class="i_bot">
+
+                            페이백 포인트 1,000P 만큼 추천인도 함께 받아요
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="foot">
+
+            <div class="p_info">
+
+                <div class="i_top">
+
+                    <img src="../../img/icon_info2_bk.png">
+
+                    <span class="vt_mid">안내사항</span>
+
+                </div>
+
+                <div class="i_bot">
+
+                    - 카드 결제시 부가세 10%가 부과됩니다.<br>
+
+                    - 결제시 결제금액의 10%가 포인트로 적립됩니다.<br>
+
+                    - 환불은 이용지점 방문 상담 후 가능하며 위약금이 발생됩니다.<br>
+
+                    - 기타 고지 내용이 들어갑니다.
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="btn_fixed">
+
+            <button type="button" class="btn_common" onclick="location.href='us_pay_ok.html'">결제하기</button>
+
+        </div>
+
+
+
+    </form>
+
+</section>
+
+
+
+<script>
+
+    var swiper = new Swiper(".mySwiper2", {
+
+        slidesPerView:"auto",
+
+        spaceBetween: 10,
+
+        // slidesPerGroup: 1,
+
+        observer: true,
+
+        observeParents: true,
+
+        // centeredSlides: true,  
+
+    });
+
+
+
+    $('input[name="way1"]').change(function(){
+
+        if($(this).is(":checked")){
+
+            $('.pay_block .way').removeClass('on');
+
+            $(this).parent('.line').next('.way').addClass('on');
+
+        }
+
+    });
+
+</script>
+    
+
+</body>
+
+</html>

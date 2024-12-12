@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">트레이너</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="trainer2" class="page">
+
+
+
+        <div class="msg_close"></div>
+    
+        
+    
+        <div class="view_area mySwiper">
+    
+            <ul class="v_ul swiper-wrapper">
+    
+                <li class="v_li swiper-slide">
+    
+                    <div class="grid">    
+    
+                        <img src="../../img/trainer.png" alt="트레이너">
+    
+                    </div>
+    
+                </li>
+    
+                <li class="v_li swiper-slide">
+    
+                    <div class="grid">    
+    
+                        <img src="../../img/trainer.png" alt="트레이너">
+    
+                    </div>
+    
+                </li>
+    
+                <li class="v_li swiper-slide">
+    
+                    <div class="grid">    
+    
+                        <img src="../../img/trainer.png" alt="트레이너">
+    
+                    </div>
+    
+                </li>
+    
+                <li class="v_li swiper-slide">
+    
+                    <div class="grid">    
+    
+                        <img src="../../img/trainer.png" alt="트레이너">
+    
+                    </div>
+    
+                </li>
+    
+                <li class="v_li swiper-slide">
+    
+                    <div class="grid">    
+    
+                        <img src="../../img/trainer.png" alt="트레이너">
+    
+                    </div>
+    
+                </li>
+    
+            </ul>
+    
+            <div class="swiper-pagination"></div>
+    
+        </div>
+    
+            <script>
+    
+                var swiper = new Swiper(".mySwiper", {
+    
+                slidesPerView : 1,
+    
+                slidesPerGroup: 1,
+    
+                loop: true, 
+    
+                loopFillGroupWithBlank: true,
+    
+                autoplay: {
+    
+                delay: 5000,
+    
+                disableOnInteraction: false,
+    
+                },
+    
+                mousewheel: false,
+    
+                keyboard:false,
+    
+                pagination: {  
+    
+                    el: ".swiper-pagination", 
+    
+                    type : 'bullets'
+    
+                }
+    
+                });
+    
+            </script>
+    
+    
+    
+        
+    
+        <div class="pd15">
+    
+            <div class="border_wrap">
+    
+                <div class="border">
+    
+                    <div class="b1_1">울산점</div>
+    
+                    <h2 class="b1_2">
+    
+                        <span class="name vt_bot">트레이너 이름</span>
+    
+                        <span class="blue vt_bot">일반</span>
+    
+                    </h2>
+    
+                    <div class="b1_3">트레이너 자기소개가 들어갑니다. 트레이너 자기소개가 들어갑니다. 트레이너 자기소개가 들어갑니다. </div>
+    
+                </div>
+    
+                <div class="border">
+    
+                    <h3 class="h3">수업 가능 시간</h3>
+    
+                    <div class="text">
+    
+                        월 09:00~19:00<br>
+    
+                        화 09:00~19:00<br>
+    
+                        수 09:00~19:00<br>
+    
+                        목 09:00~19:00<br>
+    
+                        금 09:00~19:00<br>
+    
+                        토 09:00~19:00<br>
+    
+                        일요일 휴무
+    
+                    </div>
+    
+                </div>
+    
+                <div class="border">
+    
+                    <h3 class="h3">이력</h3>
+    
+                    <div class="text">
+    
+                        <div class="mb8">근력증량 : 최고</div>
+    
+                        <div class="mb8">다이어트 : 우수</div>
+    
+                        <div class="mb8">체형교정 : 보통</div>
+    
+                        <div class="mb8">재활운동 : 미흡</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="border">
+    
+                    <h3 class="h3">자격사항</h3>
+    
+                    <div class="text">
+    
+                        - 한양대학교 스포츠과학전공<br>
+    
+                        - 생활체육지도사 2급 보디빌딩<br>
+    
+                        - ifbb pro 트레이너 자격증<br>
+    
+                        - nsca 영양코치 lv.1
+    
+                    </div>
+    
+                </div>
+    
+                <div class="border">
+    
+                    <h3 class="h3">
+    
+                        <div class="fs0">
+    
+                            <div class="h3_left vt_mid">
+    
+                                <span class="vt_mid">수업 평가</span>
+    
+                                <span class="vt_mid vm2">4개</span>
+    
+                            </div>
+
+                            <div class="h3_right vt_mid">
+
+                                <span class="vt_mid vm3">
+    
+                                    <a href="us_m_class_rv.html" class="vm3_a">모두보기</a>
+    
+                                </span>
+    
+                            </div>
+    
+                        </div>
+    
+                    </h3>
+    
+                    <div class="text mt15">
+    
+                        <div class="rev_box">
+    
+                            <div class="rv_top">GOOD</div>
+    
+                            <div class="rv_bot">
+    
+                                운동 방법을 잘 알려줬어요!
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="rev_box">
+    
+                            <div class="rv_top">BEST</div>
+    
+                            <div class="rv_bot">
+    
+                                운동 방법을 잘 알려줬어요!
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="rev_box">
+    
+                            <div class="rv_top">아쉬워요</div>
+    
+                            <div class="rv_bot">
+    
+                                오늘은 운동강도가 너무 쎘어요.
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="rev_box">
+    
+                            <div class="rv_top">BEST</div>
+    
+                            <div class="rv_bot">
+    
+                                운동 방법을 잘 알려줬어요!
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="border">
+    
+                    <h3 class="h3">
+    
+                        <div class="fs0">
+    
+                            <div class="h3_left vt_mid">
+    
+                                <span class="vt_mid">리뷰</span>
+    
+                                <span class="vt_mid vm2">4개</span>
+    
+                            </div>
+
+                            <div class="h3_right vt_mid">
+
+                                <span class="vt_mid vm3">
+    
+                                    <a href="us_m_review.html" class="vm3_a">모두보기</a>
+    
+                                </span>
+    
+                            </div>
+    
+                        </div>
+    
+                    </h3>
+    
+                    <div class="text mt15">
+    
+                        <div class="rev_wrap">
+    
+                            <div class="rev_box2">
+    
+                                <div class="rb2_top">닉네임</div>
+    
+                                <div class="rb2_bot">
+    
+                                    리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다...
+    
+                                </div>
+    
+                                <div class="rb2_date">2024. 05. 31</div>
+    
+                            </div>
+    
+                            <div class="rev_box2">
+    
+                                <div class="rb2_top">닉네임</div>
+    
+                                <div class="rb2_bot">
+    
+                                    리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다...
+    
+                                </div>
+    
+                                <div class="rb2_date">2024. 05. 31</div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </section>
+
+    <footer class="footer">
+        <a href="us_index.html" class="foot_a">
+            <img src="../../img/nav1_st.png">
+            <div class="foot_t">홈</div>
+        </a>
+        <a href="us_schedule.html" class="foot_a">
+            <img src="../../img/nav2_st.png">
+            <div class="foot_t">수업</div>
+        </a>
+        <a href="us_exercise.html" class="foot_a">
+            <img src="../../img/nav3_us.png">
+            <div class="foot_t">운동</div>
+        </a>
+        <a href="us_food.html" class="foot_a">
+            <img src="../../img/nav4_us.png">
+            <div class="foot_t">식단</div>
+        </a>
+        <a href="us_mypage.html" class="foot_a">
+            <img src="../../img/nav5.png">
+            <div class="foot_t">마이</div>
+        </a>
+    </footer>
+
+    
+
+</body>
+
+</html>

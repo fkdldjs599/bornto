@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">운동</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 운동팝업 -->
+    <div class="b_pop edpop">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="blue_bg">
+    
+    
+    
+            <div class="bp_title">
+    
+                <h2 class="p_h2 vt_mid">벤치프레스</h2>
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="../../img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="bp_con">
+    
+                <div class="e_img_area">
+    
+                    <div class="grid">
+    
+                        <img src="../../img/ed_img.png" alt="벤치프레스">
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid fw500">도구</h3>
+    
+                        <div class="bp_div vt_mid fw500">바벨</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid fw500">타입</h3>
+    
+                        <div class="bp_div vt_mid">무게/횟수</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 fw500">운동방법</h3>
+    
+                        <div class="bp_detail">
+    
+                            1. 벤치에 가슴을 펴고 누운 상태에서 바벨을 어깨너비보다 조금 넓게 잡고 위로 들어올립니다.<br>
+    
+                            2. 가슴 근육의 이완을 느끼며 팔을 굽혀 바벨을 가슴 방향으로 내립니다.<br>
+    
+                            3. 가슴 근육의 수축을 느끼며 몸으 수직 방향으로 바벨을 밀어 올립니다.
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="link_area">
+    
+                    <a href="#" type="button" class="link">유튜브 검색하기</a>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    </div>
+
+    <section id="m_exer" class="page">
+
+        <div class="pd15">
+    
+            <div class="a_btnarea">
+    
+                <button type="button" class="ex_btns btn1">전체 완료</button>
+    
+                <button type="button" class="ex_btns btn2" onclick="location.href='us_m_exer2.html'">+운동 추가</button>
+    
+            </div>
+    
+    
+    
+            <div class="ex_wrap">
+    
+                <div class="exer_block">
+    
+                    <div class="exer1">
+    
+                        <button type="button" class="i_btn vt_mid">
+    
+                            <img src="../../img/icon_info.png" alt="정보">
+    
+                        </button>
+    
+                        <span class="ex_name vt_mid">하체｜바벨 백스쿼트</span>
+    
+                        <button type="button" class="del_btn vt_mid">삭제</button>
+    
+                    </div>
+    
+                    <div class="exer2">총 볼륨 0kg</div>
+    
+                    <div class="exer3">
+    
+                        <div class="e_table vt_bot">
+    
+                            <div class="tr">
+    
+                                <div class="th th1 blue">완료</div>
+    
+                                <div class="th th2 on">세트</div>
+    
+                                <div class="th">kg</div>
+    
+                                <div class="th">회</div>
+    
+                            </div>
+    
+                            <div class="tr">
+    
+                                <div class="td td1">
+    
+                                    <input type="checkbox" name="comp" id="comp1" class="comp">
+    
+                                </div>
+    
+                                <div class="td td2 on">1</div>
+    
+                                <div class="td">0</div>
+    
+                                <div class="td">0</div>
+    
+    
+    
+                                <div class="edit_wrap">
+    
+                                    <button type="button" class="edit_btn">수정</button>
+    
+                                </div>
+    
+    
+    
+                                <div class="pg_wrap">
+    
+                                    <button type="button" class="pg_btn">
+    
+                                        <img src="../../img/pg_btn2.png">
+    
+                                    </button>
+    
+                                    <button type="button" class="pg_btn">
+    
+                                        <img src="../../img/pg_btn.png">
+    
+                                    </button>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="tr">
+    
+                                <div class="td td1">
+    
+                                    <input type="checkbox" name="comp" id="comp2" class="comp">
+    
+                                </div>
+    
+                                <div class="td td2 on">1</div>
+    
+                                <div class="td">0</div>
+    
+                                <div class="td">0</div>
+    
+    
+    
+                                <div class="edit_wrap">
+    
+                                    <button type="button" class="edit_btn">수정</button>
+    
+                                </div>
+    
+    
+    
+                                <div class="pg_wrap">
+    
+                                    <button type="button" class="pg_btn">
+    
+                                        <img src="../../img/pg_btn2.png">
+    
+                                    </button>
+    
+                                    <button type="button" class="pg_btn">
+    
+                                        <img src="../../img/pg_btn.png">
+    
+                                    </button>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="exer_block">
+    
+                    <div class="exer1">
+    
+                        <button type="button" class="i_btn vt_mid">
+    
+                            <img src="../../img/icon_info.png" alt="정보">
+    
+                        </button>
+    
+                        <span class="ex_name vt_mid">하체｜바벨 백스쿼트</span>
+    
+                        <button type="button" class="del_btn vt_mid">삭제</button>
+    
+                    </div>
+    
+                    <div class="exer2">총 볼륨 0kg</div>
+    
+                    <div class="exer3">
+    
+                        <div class="e_table vt_bot">
+    
+                            <div class="tr">
+    
+                                <div class="th th1 blue">완료</div>
+    
+                                <div class="th th2 on">세트</div>
+    
+                                <div class="th">kg</div>
+    
+                                <div class="th">회</div>
+    
+                            </div>
+    
+                            <div class="tr">
+    
+                                <div class="td td1">
+    
+                                    <input type="checkbox" name="comp" id="comp1" class="comp">
+    
+                                </div>
+    
+                                <div class="td td2 on">1</div>
+    
+                                <div class="td">0</div>
+    
+                                <div class="td">0</div>
+    
+    
+    
+                                <div class="edit_wrap">
+    
+                                    <button type="button" class="edit_btn">수정</button>
+    
+                                </div>
+    
+    
+    
+                                <div class="pg_wrap">
+    
+                                    <button type="button" class="pg_btn">
+    
+                                        <img src="../../img/pg_btn2.png">
+    
+                                    </button>
+    
+                                    <button type="button" class="pg_btn">
+    
+                                        <img src="../../img/pg_btn.png">
+    
+                                    </button>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="tr">
+    
+                                <div class="td td1">
+    
+                                    <input type="checkbox" name="comp" id="comp2" class="comp">
+    
+                                </div>
+    
+                                <div class="td td2 on">1</div>
+    
+                                <div class="td">0</div>
+    
+                                <div class="td">0</div>
+    
+    
+    
+                                <div class="edit_wrap">
+    
+                                    <button type="button" class="edit_btn">수정</button>
+    
+                                </div>
+    
+    
+    
+                                <div class="pg_wrap">
+    
+                                    <button type="button" class="pg_btn">
+    
+                                        <img src="../../img/pg_btn2.png">
+    
+                                    </button>
+    
+                                    <button type="button" class="pg_btn">
+    
+                                        <img src="../../img/pg_btn.png">
+    
+                                    </button>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="btn_fixed ex_start on">
+    
+                <button type="button" class="btn_common">운동시작</button>
+    
+            </div>
+    
+    
+    
+            <div class="btn_fixed ex_ing">
+    
+                <button type="button" class="ing_btns ib1 on">
+    
+                    <div class="grid">
+    
+                        <div class="top">
+    
+                            <div class="icon vt_mid">
+    
+                                <img src="../../img/icon_stop.png" alt="정지" class="stop on">
+    
+                                <img src="../../img/icon_start.png" alt="시작" class="start">
+    
+                            </div>
+    
+                            <div class="time vt_mid">00:05</div>
+    
+                        </div>
+    
+                        <div class="bot">
+    
+                            운동시간
+    
+                        </div>
+    
+                    </div>
+    
+                </button>
+    
+                <button type="button" class="ing_btns ib2">
+    
+                    <div class="grid">
+    
+                        <div class="top">
+    
+                            <div class="time vt_mid">00:10</div>
+    
+                        </div>
+    
+                        <div class="bot">
+    
+                            휴식시간
+    
+                        </div>
+    
+                    </div>
+    
+                </button>
+    
+                <button type="button" class="ing_btns ib3">
+    
+                    <div class="grid">
+    
+                        휴식 타이머 설정
+    
+                    </div>
+    
+                </button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+    
+    
+        $('input[name="comp"]').change(function(){
+    
+            $('.pop1').addClass('on');
+    
+            $('.pop1 .p_h2').html("운동 시작 전에는<br>완료 체크가 불가합니다.<div class='sub'>운동 시작 버튼을 눌러서 운동을 시작하세요!</div>");
+    
+            $(this).prop("checked", false);
+    
+        });
+    
+    
+    
+        $('#m_exer .i_btn').click(function(){
+    
+            $('.b_pop').addClass('on');
+    
+            
+    
+            var bpHeight = $('.b_pop .blue_bg').outerHeight(true);
+    
+            // console.log(bpHeight)
+    
+            $('.b_pop .blue_bg').css({'bottom' : - bpHeight + 'px'});
+    
+    
+    
+            $('.b_pop .blue_bg').animate({'bottom' : '0'}, 500);
+    
+        });
+    
+    
+    
+    
+    
+        //운동 시작 버튼누름
+    
+        $('#m_exer .ex_start').click(function(){
+    
+    
+    
+            $('.e_table .th2').removeClass('on');
+    
+            $('.e_table .td2').removeClass('on');
+    
+    
+    
+            $('#m_exer .edit_wrap').addClass('on');
+    
+    
+    
+            $('#m_exer .ex_start').removeClass('on');
+    
+            $('#m_exer .ex_ing').addClass('on');
+    
+        });
+    
+    
+    
+        $('#m_exer .ing_btns.ib1').each(function(data,index){
+    
+            $('#m_exer .ing_btns.ib1').data('exercise', true);
+    
+        });
+    
+    
+    
+        //운동시간 누름
+    
+        $('#m_exer .ing_btns.ib1').click(function(){
+    
+    
+    
+            if($(this).hasClass('on')){
+    
+                if($(this).data('exercise')){
+    
+                    $('#m_exer .ing_btns.ib1 .icon img').removeClass('on');
+    
+                    $('#m_exer .ing_btns.ib1 .icon .start').addClass('on');
+    
+                    $('#m_exer .ing_btns.ib1').data('exercise', false);
+    
+                }else{
+    
+                    $('#m_exer .ing_btns.ib1 .icon img').removeClass('on');
+    
+                    $('#m_exer .ing_btns.ib1 .icon .stop').addClass('on');
+    
+                    $('#m_exer .ing_btns.ib1').data('exercise', true);
+    
+                }
+    
+            }else{
+    
+                $('#m_exer .ing_btns').removeClass('on');
+    
+                $('#m_exer .ing_btns.ib1').addClass('on');
+    
+                $('#m_exer .ing_btns.ib1').data('exercise', false);
+    
+            }
+    
+        });
+    
+    
+    
+    
+    
+        //휴식시간 누름
+    
+        $('#m_exer .ing_btns.ib2').click(function(){
+    
+            if($(this).hasClass('on')){
+    
+    
+    
+            }else{
+    
+                $('#m_exer .ing_btns').removeClass('on');
+    
+                $('#m_exer .ing_btns.ib2').addClass('on');
+    
+    
+    
+                $('#m_exer .ing_btns.ib1 .icon img').removeClass('on');
+    
+                $('#m_exer .ing_btns.ib1 .icon .start').addClass('on');
+    
+                $('#m_exer .ing_btns.ib1').data('exercise', false);
+    
+            }
+    
+        });
+    
+    
+    
+        $('#m_exer .ing_btns.ib3').click(function(){
+    
+            $('.timer').addClass('on');
+    
+        });
+    
+    
+    
+    
+    
+        //운동 수정버튼 누름
+    
+        $('#m_exer .edit_btn').click(function(){
+    
+            $('.e_edit').addClass('on');
+    
+        });
+    
+    
+    
+    
+    
+        //운동변경 > 수정
+    
+        $('.e_edit .btn2').click(function(){
+    
+            $('.e_edit').removeClass('on');
+    
+        });
+    
+    
+    
+    
+    
+        //전체완료 누르면 운동완료 팝업+파란색으로 변함
+    
+        $('#m_exer .ex_btns.btn1').click(function(){
+    
+            $(this).addClass('blue')
+    
+            $('.e_done').addClass('on');
+    
+        });
+    
+    
+    
+    
+    
+        $('.e_done .p_btn').click(function(){
+    
+            location.href='us_m_exer_done.html';
+    
+        });
+    
+    
+    
+    
+    
+    </script>
+
+
+    
+
+</body>
+
+</html>

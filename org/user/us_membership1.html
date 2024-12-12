@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">멤버십 선택</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="membership" class="form">
+
+        <form>
+    
+            <div class="pd15">
+    
+    
+    
+                <div class="ms_title">
+    
+                    <h2 class="ms_h2">멤버십을 종류를 선택해주세요.</h2>
+    
+                    <div class="sub">멤버십은 매월 결제되는 정기구독과<br>6개월/12개월 정액제, 하루 기간 정액제이 있습니다.</div>
+    
+                </div>
+    
+    
+    
+                <div class="ms_con">
+    
+                    <div class="opt">
+    
+                        <input type="radio" name="ms1" id="ms1_1" class="radio" checked>
+    
+                        <label class="ms_lab" for="ms1_1">
+    
+                            <div class="square">
+    
+                                <div class="grid">
+    
+                                    <div class="mg7">정기구독 [특가]</div>
+    
+                                    <div class="mg7">매달 자동결제</div>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="sub_info">
+    
+                                <div class="si1">
+    
+                                    <div class="grid">
+    
+                                        매달 나눠서<br>
+    
+                                        결제를 원하시는 분<br>
+    
+                                        (언제든지 해지가능)
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="si2">
+    
+                                    <div class="grid">
+    
+                                        가입비 별도<br>
+    
+                                        +79,000원<br>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </label>
+    
+                    </div>
+    
+    
+    
+                    <div class="opt">
+    
+                        <input type="radio" name="ms1" id="ms1_2" class="radio">
+    
+                        <label class="ms_lab" for="ms1_2">
+    
+                            <div class="square">
+    
+                                <div class="grid">
+    
+                                    <div class="mg7">정액제</div>
+    
+                                    <div class="mg7">1년(12개월)</div>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="sub_info">
+    
+                                <div class="si1">
+    
+                                    <div class="grid">
+    
+                                        한번에<br>
+    
+                                        결제를 원하는 분
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="si2">
+    
+                                    <div class="grid">
+    
+                                        가입비 면제
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </label>
+    
+                    </div>
+    
+    
+    
+                    <div class="opt">
+    
+                        <input type="radio" name="ms1" id="ms1_3" class="radio">
+    
+                        <label class="ms_lab" for="ms1_3">
+    
+                            <div class="square">
+    
+                                <div class="grid">
+    
+                                    <div class="mg7">하루만 이용</div>
+    
+                                    <div class="mg7">일 7,900원</div>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="sub_info">
+    
+                                <div class="si1">
+    
+                                    <div class="grid">
+    
+                                    하루만 이용<br>
+    
+                                    하시는 분
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="si2">
+    
+                                    <div class="grid">
+    
+                                        가입비 X
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </label>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="btn_fixed">
+    
+                <button type="button" class="btn_common">다음</button>
+    
+            </div>
+    
+    
+    
+        </form>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+        $('#membership .btn_common').click(function(){
+    
+            if($('#ms1_1').is(":checked")){
+    
+                location.href='us_membership2.html';
+    
+            }else if($('#ms1_2').is(":checked")){
+    
+                location.href='us_membership3.html';
+    
+            }else if($('#ms1_3').is(":checked")){
+    
+                location.href='us_pay.html';
+    
+            }
+    
+        });
+    
+    </script>   
+
+</body>
+
+</html>

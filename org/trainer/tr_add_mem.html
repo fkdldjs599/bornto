@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <header class="header t_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">회원 선택</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="add_schedule" class="form">
+
+
+
+        <form>
+    
+            <div class="pd15">
+    
+                <div class="s_area">
+    
+                    <input type="text" name="search" id="search" class="search" placeholder="회원 이름 검색">
+    
+                    <button type="button" class="s_btn">
+    
+                        <img src="../../img/s_btn.png" alt="검색">
+    
+                    </button>
+    
+                </div>
+    
+    
+    
+                <div class="m_list">
+    
+                    <div class="ml_block">
+    
+                        <input type="radio" name="member" id="mem1" class="radio">
+    
+                        <label for="mem1" class="m_lab">
+    
+                            <div class="profile vt_mid">
+    
+                                <div class="grid">
+    
+                                    <img src="../../img/pro_empty.png" alt="프로필">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="m_info vt_mid">
+    
+                                <div class="mi_top">회원이름</div>
+    
+                                <div class="mi_bot">[그룹 · 주 1회 · 30분] 그룹 PT 10회</div>
+    
+                            </div>
+    
+                            <div class="num vt_bot">
+    
+                                <div class="selected">선택됨</div>
+    
+                                <div class="num2">잔여 5/10</div>
+    
+                            </div>
+    
+                        </label>
+    
+                    </div>
+    
+                    <div class="ml_block">
+    
+                        <input type="radio" name="member" id="mem2" class="radio">
+    
+                        <label for="mem2" class="m_lab">
+    
+                            <div class="profile vt_mid">
+    
+                                <div class="grid">
+    
+                                    <img src="../../img/profile2.png" alt="프로필">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="m_info vt_mid">
+    
+                                <div class="mi_top">회원이름</div>
+    
+                                <div class="mi_bot">[그룹 · 주 1회 · 30분] 그룹 PT 10회</div>
+    
+                            </div>
+    
+                            <div class="num vt_bot">
+    
+                                <div class="selected">선택됨</div>
+    
+                                <div class="num2">잔여 5/10</div>
+    
+                            </div>
+    
+                        </label>
+    
+                    </div>
+    
+                    <div class="ml_block">
+    
+                        <input type="radio" name="member" id="mem3" class="radio">
+    
+                        <label for="mem3" class="m_lab">
+    
+                            <div class="profile vt_mid">
+    
+                                <div class="grid">
+    
+                                    <img src="../../img/pro_empty.png" alt="프로필">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="m_info vt_mid">
+    
+                                <div class="mi_top">회원이름</div>
+    
+                                <div class="mi_bot">[그룹 · 주 1회 · 30분] 그룹 PT 10회</div>
+    
+                            </div>
+    
+                            <div class="num vt_bot">
+    
+                                <div class="selected">선택됨</div>
+    
+                                <div class="num2">잔여 5/10</div>
+    
+                            </div>
+    
+                        </label>
+    
+                    </div>
+    
+                    <div class="ml_block">
+    
+                        <input type="radio" name="member" id="mem4" class="radio">
+    
+                        <label for="mem4" class="m_lab">
+    
+                            <div class="profile vt_mid">
+    
+                                <div class="grid">
+    
+                                    <img src="../../img/profile2.png" alt="프로필">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="m_info vt_mid">
+    
+                                <div class="mi_top">회원이름</div>
+    
+                                <div class="mi_bot">[그룹 · 주 1회 · 30분] 그룹 PT 10회</div>
+    
+                            </div>
+    
+                            <div class="num vt_bot">
+    
+                                <div class="selected">선택됨</div>
+    
+                                <div class="num2">잔여 5/10</div>
+    
+                            </div>
+    
+                        </label>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="btn_fixed">
+    
+                <button type="button" class="btn_common gray">등록</button>
+    
+            </div>
+    
+        </form>
+    
+    
+    
+    </section>
+    
+    
+    
+    
+    
+    <script>
+    
+        $('#add_schedule input[name="member"]').change(function(){
+    
+            $('#add_schedule .btn_common').removeClass('gray')
+    
+        });
+    
+        $('#add_schedule .btn_common').click(function(){
+    
+            if($(this).hasClass('gray')){
+    
+    
+    
+            }else{
+    
+                history.go(-1);
+    
+            }
+    
+        });
+    
+    </script>
+
+    <!-- <footer class="footer t_foot">
+        <a href="tr_index.html" class="foot_a">
+            <img src="../../img/nav1_st.png">
+            <div class="foot_t">홈</div>
+        </a>
+        <a href="tr_schedule.html" class="foot_a on">
+            <img src="../../img/nav2_st_on.png">
+            <div class="foot_t">일정</div>
+        </a>
+        <a href="tr_people.html" class="foot_a ">
+            <img src="../../img/nav3_st.png">
+            <div class="foot_t">인원</div>
+        </a>
+        <a href="tr_mypage.html" class="foot_a ">
+            <img src="../../img/nav5_st.png">
+            <div class="foot_t">마이</div>
+        </a>
+    </footer> -->
+
+
+</body>
+
+</html>

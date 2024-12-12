@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header s_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">직원 상세</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="trainer_edit" class="form">
+
+        <div class="pd15">
+    
+            <form>
+    
+                <div class="profile_area">
+    
+                    <input type="file" name="profile" id="profile" class="file" onchange="readURL(this)">
+    
+                    <label for="profile" class="p_lab">
+    
+                        <div class="circle">
+    
+                            <div class="grid">
+    
+                                <img src="../../img/profile.png" alt="프로필" id="preview">
+    
+                            </div>
+    
+                            <span class="m_circle">
+    
+                                <div class="grid">
+    
+                                    <img src="../../img/profile_btn.png" alt="사진 변경">
+    
+                                </div>
+    
+                            </span>
+    
+                        </div>
+    
+                    </label>
+    
+                </div>
+    
+    
+    
+                <div class="e_wrap">
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">등급</label>
+    
+                        <select class="select">
+    
+                            <option>일반</option>
+    
+                            <option>일반</option>
+    
+                            <option>일반</option>
+    
+                        </select>
+    
+                    </div>
+    
+    
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">이름</label>
+    
+                        <input type="text" name="t_name" id="t_name" value="홍길동" class="input">
+    
+                    </div>
+    
+    
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">전화번호</label>
+    
+                        <input type="text" name="t_num" id="t_num" value="010-1234-5678" class="input">
+    
+                    </div>
+    
+    
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">자기소개</label>
+    
+                        <textarea class="textarea">입력한 자기소개가 들어갑니다.</textarea>
+    
+                    </div>
+    
+    
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">이력</label>
+    
+                        <textarea class="textarea">입력한 이력이 들어갑니다.</textarea>
+    
+                    </div>
+    
+    
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">자격사항</label>
+    
+                        <textarea class="textarea">입력한 자격사항이 들어갑니다.</textarea>
+    
+                    </div>
+    
+    
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">수업가능시간</label>
+    
+                        
+    
+                        <div class="time_wrap">
+    
+                            <div class="day">
+    
+                                <div class="t_left vt_mid">
+    
+                                    <div class="tl_top">월요일</div>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>11:00</option>
+    
+                                        <option>12:00</option>
+    
+                                        <option>13:00</option>
+    
+                                    </select>
+    
+                                    <span class="gap vt_mid">~</span>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>21:00</option>
+    
+                                        <option>22:00</option>
+    
+                                        <option>23:00</option>
+    
+                                    </select>
+    
+                                </div>
+    
+                                <div class="t_right vt_mid">
+    
+                                    <div class="tr_top">
+    
+                                        <input type="checkbox" name="h_day" id="h_day1" class="ck">
+    
+                                        <label for="h_day1" class="h_lab">휴무일</label>
+    
+                                    </div>
+    
+                                    <div class="tr_bot">(10.0시간)</div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left vt_mid">
+    
+                                    <div class="tl_top">화요일</div>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>11:00</option>
+    
+                                        <option>12:00</option>
+    
+                                        <option>13:00</option>
+    
+                                    </select>
+    
+                                    <span class="gap vt_mid">~</span>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>21:00</option>
+    
+                                        <option>22:00</option>
+    
+                                        <option>23:00</option>
+    
+                                    </select>
+    
+                                </div>
+    
+                                <div class="t_right vt_mid">
+    
+                                    <div class="tr_top">
+    
+                                        <input type="checkbox" name="h_day" id="h_day2" class="ck">
+    
+                                        <label for="h_day2" class="h_lab">휴무일</label>
+    
+                                    </div>
+    
+                                    <div class="tr_bot">(10.0시간)</div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left vt_mid">
+    
+                                    <div class="tl_top">수요일</div>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>11:00</option>
+    
+                                        <option>12:00</option>
+    
+                                        <option>13:00</option>
+    
+                                    </select>
+    
+                                    <span class="gap vt_mid">~</span>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>21:00</option>
+    
+                                        <option>22:00</option>
+    
+                                        <option>23:00</option>
+    
+                                    </select>
+    
+                                </div>
+    
+                                <div class="t_right vt_mid">
+    
+                                    <div class="tr_top">
+    
+                                        <input type="checkbox" name="h_day" id="h_day3" class="ck">
+    
+                                        <label for="h_day3" class="h_lab">휴무일</label>
+    
+                                    </div>
+    
+                                    <div class="tr_bot">(10.0시간)</div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left vt_mid">
+    
+                                    <div class="tl_top">목요일</div>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>11:00</option>
+    
+                                        <option>12:00</option>
+    
+                                        <option>13:00</option>
+    
+                                    </select>
+    
+                                    <span class="gap vt_mid">~</span>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>21:00</option>
+    
+                                        <option>22:00</option>
+    
+                                        <option>23:00</option>
+    
+                                    </select>
+    
+                                </div>
+    
+                                <div class="t_right vt_mid">
+    
+                                    <div class="tr_top">
+    
+                                        <input type="checkbox" name="h_day" id="h_day4" class="ck">
+    
+                                        <label for="h_day4" class="h_lab">휴무일</label>
+    
+                                    </div>
+    
+                                    <div class="tr_bot">(10.0시간)</div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left vt_mid">
+    
+                                    <div class="tl_top">금요일</div>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>11:00</option>
+    
+                                        <option>12:00</option>
+    
+                                        <option>13:00</option>
+    
+                                    </select>
+    
+                                    <span class="gap vt_mid">~</span>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>21:00</option>
+    
+                                        <option>22:00</option>
+    
+                                        <option>23:00</option>
+    
+                                    </select>
+    
+                                </div>
+    
+                                <div class="t_right vt_mid">
+    
+                                    <div class="tr_top">
+    
+                                        <input type="checkbox" name="h_day" id="h_day5" class="ck">
+    
+                                        <label for="h_day5" class="h_lab">휴무일</label>
+    
+                                    </div>
+    
+                                    <div class="tr_bot">(10.0시간)</div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left vt_mid">
+    
+                                    <div class="tl_top">토요일</div>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>11:00</option>
+    
+                                        <option>12:00</option>
+    
+                                        <option>13:00</option>
+    
+                                    </select>
+    
+                                    <span class="gap vt_mid">~</span>
+    
+                                    <select class="wid108 select">
+    
+                                        <option>21:00</option>
+    
+                                        <option>22:00</option>
+    
+                                        <option>23:00</option>
+    
+                                    </select>
+    
+                                </div>
+    
+                                <div class="t_right vt_mid">
+    
+                                    <div class="tr_top">
+    
+                                        <input type="checkbox" name="h_day" id="h_day6" class="ck">
+    
+                                        <label for="h_day6" class="h_lab">휴무일</label>
+    
+                                    </div>
+    
+                                    <div class="tr_bot">(10.0시간)</div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="btn_fixed">
+    
+                    <button type="button" class="btn_common" onclick="history.go(-1);">저장</button>
+    
+                </div>
+    
+            </form>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    
+    
+    <script>
+    
+    function readURL(input) {
+    
+        if (input.files && input.files[0]) {
+    
+            var reader = new FileReader();
+    
+            reader.onload = function(e) {
+    
+            document.getElementById('preview').src = e.target.result;
+    
+            };
+    
+            reader.readAsDataURL(input.files[0]);
+    
+        } else {
+    
+            document.getElementById('preview').src = "";
+    
+        }
+    
+    }
+    
+    
+    
+    </script>
+
+
+</body>
+
+</html>

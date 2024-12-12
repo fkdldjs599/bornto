@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">회원가입</hl>
+
+    </header>
+
+
+    <section id="join" class="form">
+
+        <div class="pd15">
+            <form>
+                <div class="j_wrap">
+                    <div class="j_block">
+                        <label for="user_name" class="j_lab">이름</label>
+                        <input type="text" name="user_name" id="user_name" class="input">
+                    </div>
+                    <div class="j_block">
+                        <label class="j_lab">성별</label>
+                        <div class="border">
+                            <input type="radio" name="gender" id="male" class="gender" checked>
+                            <label for="male" class="r_lab">남</label>
+                            <input type="radio" name="gender" id="female" class="gender">
+                            <label for="female" class="r_lab">여</label>
+                        </div>
+                    </div>
+                    <div class="j_block">
+                        <label for="birth" class="j_lab">생년월일</label>
+                        <input type="number" name="birth" id="birth" class="wid150" placeholder="생년월일(6자리)">
+                    </div>
+                    <div class="j_block">
+                        <label for="address1" class="j_lab">주소</label>
+                        <input type="text" name="address1" id="address1" class="input">
+                        <input type="text" name="address2" id="address2" class="input" placeholder="상세주소">
+                    </div>
+                    <div class="j_block">
+                        <label for="user_num" class="j_lab">핸드폰 번호</label>
+                        <input type="number" name="user_num" id="user_num" class="input" placeholder="'-' 구분없이 입력">
+                    </div>
+                    <div class="j_block">
+                        <label for="birth" class="j_lab">경로</label>
+                        <select name="way" id="way" class="wid150 select">
+                            <option>인터넷</option>
+                            <option>전단지</option>
+                            <option>인스타그램</option>
+                            <option>블로그</option>
+                            <option>지인소개</option>
+                            <option>기타</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="btn_area pd8">
+                    <button type="button" class="btn_common" onclick="location.href='index.html'">회원가입</button>
+                </div>
+            </form>
+        </div>
+    
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">추가 선택</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="membership" class="form">
+
+
+
+        <form>
+    
+            <div class="pd15">
+    
+    
+    
+                <div class="ms_title">
+    
+                    <h2 class="ms_h2">추가 상품을 이용하시나요?</h2>
+    
+                    <div class="sub">개인락커는 이용지점 락커만 사용 가능합니다.<br>상품은 이용 전 지점 직원에게 문의 후 사용해주세요.</div>
+    
+                </div>
+    
+    
+    
+                <div class="ms_con">
+    
+                    <div class="opt wid250">
+    
+                        <input type="checkbox" name="ms3" id="ms3_1" class="radio">
+    
+                        <label class="ms_lab" for="ms3_1">
+    
+                            <div class="square">
+    
+                                <div class="grid">
+    
+                                    <div class="mg7 fs20">개인락커</div>
+    
+                                    <div class="mg7 fs16">월 10,000원</div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </label>
+    
+                    </div>
+    
+    
+    
+                    <div class="locker_wrap">
+    
+                        <div class="sub">내부물품은 분실 책임지지 않습니다.<br>미결제 좌물쇠는 파손처리 됩니다.</div>
+    
+    
+    
+                    <!--여자/남자 구분 추가-->
+    
+                        <div class="gender_div">
+    
+                            <div class="gender_tab">
+    
+                                <input type="radio" name="gender" id="male" class="radio">
+    
+                                <label for="male" class="g_lab">남자</label>
+    
+    
+    
+                                <input type="radio" name="gender" id="female" class="radio">
+    
+                                <label for="female" class="g_lab">여자</label>
+    
+                            </div>
+    
+                            <div class="male info">* 남자 락커는 3층 복도에 있습니다.</div>
+    
+                            <div class="female info">* 여자 락커는 탈의실 내부에 있습니다.</div>
+    
+                        </div>
+    
+                    <!--여자/남자 구분 추가-->
+    
+    
+    
+                        <div class="g_tab_wrap">
+    
+                            <div class="g_tab male">
+    
+                                <div class="status_wrap">
+    
+                                    <div class="status st1 vt_mid">사용 중</div>
+    
+                                    <div class="status st2 vt_mid">사용 가능</div>
+    
+                                    <div class="status st3 vt_mid">선택</div>
+    
+                                </div>
+    
+    
+    
+                                <div class="locker">
+    
+                                    <div class="direc">위 (천장쪽)</div>
+    
+                                    <div class="loc_wrap">
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_1" class="radio">
+    
+                                            <label for="locker1_1" class="loc_lab">1</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_2" class="radio">
+    
+                                            <label for="locker1_2" class="loc_lab">2</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_3" class="radio">
+    
+                                            <label for="locker1_3" class="loc_lab">3</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_4" class="radio">
+    
+                                            <label for="locker1_4" class="loc_lab">4</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_5" class="radio">
+    
+                                            <label for="locker1_5" class="loc_lab">5</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_6" class="radio">
+    
+                                            <label for="locker1_6" class="loc_lab">6</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_7" class="radio">
+    
+                                            <label for="locker1_7" class="loc_lab">7</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_8" class="radio">
+    
+                                            <label for="locker1_8" class="loc_lab">8</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_9" class="radio">
+    
+                                            <label for="locker1_9" class="loc_lab">9</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_10" class="radio" disabled>
+    
+                                            <label for="locker1_10" class="loc_lab">10</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_11" class="radio" disabled>
+    
+                                            <label for="locker1_11" class="loc_lab">11</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_12" class="radio" disabled>
+    
+                                            <label for="locker1_12" class="loc_lab">12</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_13" class="radio">
+    
+                                            <label for="locker1_13" class="loc_lab">13</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_14" class="radio">
+    
+                                            <label for="locker1_14" class="loc_lab">14</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_15" class="radio">
+    
+                                            <label for="locker1_15" class="loc_lab">15</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_16" class="radio">
+    
+                                            <label for="locker1_16" class="loc_lab">16</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_17" class="radio" disabled>
+    
+                                            <label for="locker1_17" class="loc_lab">17</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_18" class="radio">
+    
+                                            <label for="locker1_18" class="loc_lab">18</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_19" class="radio">
+    
+                                            <label for="locker1_19" class="loc_lab">19</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_20" class="radio">
+    
+                                            <label for="locker1_20" class="loc_lab">20</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_21" class="radio">
+    
+                                            <label for="locker1_21" class="loc_lab">21</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_22" class="radio">
+    
+                                            <label for="locker1_22" class="loc_lab">22</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_23" class="radio" disabled>
+    
+                                            <label for="locker1_23" class="loc_lab">23</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_24" class="radio">
+    
+                                            <label for="locker1_24" class="loc_lab">24</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_25" class="radio">
+    
+                                            <label for="locker1_25" class="loc_lab">25</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_26" class="radio">
+    
+                                            <label for="locker1_26" class="loc_lab">26</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_27" class="radio">
+    
+                                            <label for="locker1_27" class="loc_lab">27</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_28" class="radio">
+    
+                                            <label for="locker1_28" class="loc_lab">28</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_29" class="radio">
+    
+                                            <label for="locker1_29" class="loc_lab">29</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_30" class="radio">
+    
+                                            <label for="locker1_30" class="loc_lab">30</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_31" class="radio">
+    
+                                            <label for="locker1_31" class="loc_lab">31</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker1" id="locker1_32" class="radio">
+    
+                                            <label for="locker1_32" class="loc_lab">32</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="direc">아래 (바닥쪽)</div>
+    
+                                </div>
+    
+    
+    
+                                <div class="mon">
+    
+                                    <select class="slt2">
+    
+                                        <option>1개월</option>
+    
+                                        <option>2개월</option>
+    
+                                        <option>3개월</option>
+    
+                                    </select>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="g_tab female">
+    
+                                <div class="status_wrap">
+    
+                                    <div class="status st1 vt_mid">사용 중</div>
+    
+                                    <div class="status st2 vt_mid">사용 가능</div>
+    
+                                    <div class="status st3 vt_mid">선택</div>
+    
+                                </div>
+    
+    
+    
+                                <div class="locker">
+    
+                                    <div class="direc">위 (천장쪽)</div>
+    
+                                    <div class="loc_wrap">
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_2_1" class="radio">
+    
+                                            <label for="locker2_2_1" class="loc_lab">1</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_2" class="radio">
+    
+                                            <label for="locker2_2" class="loc_lab">2</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_3" class="radio">
+    
+                                            <label for="locker2_3" class="loc_lab">3</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_4" class="radio">
+    
+                                            <label for="locker2_4" class="loc_lab">4</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_5" class="radio">
+    
+                                            <label for="locker2_5" class="loc_lab">5</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_6" class="radio">
+    
+                                            <label for="locker2_6" class="loc_lab">6</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_7" class="radio">
+    
+                                            <label for="locker2_7" class="loc_lab">7</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_8" class="radio">
+    
+                                            <label for="locker2_8" class="loc_lab">8</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_9" class="radio">
+    
+                                            <label for="locker2_9" class="loc_lab">9</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_10" class="radio">
+    
+                                            <label for="locker2_10" class="loc_lab">10</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_11" class="radio">
+    
+                                            <label for="locker2_11" class="loc_lab">11</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_12" class="radio">
+    
+                                            <label for="locker2_12" class="loc_lab">12</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_13" class="radio" disabled>
+    
+                                            <label for="locker2_13" class="loc_lab">13</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_14" class="radio" disabled>
+    
+                                            <label for="locker2_14" class="loc_lab">14</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_15" class="radio" disabled>
+    
+                                            <label for="locker2_15" class="loc_lab">15</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_16" class="radio">
+    
+                                            <label for="locker2_16" class="loc_lab">16</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_17" class="radio">
+    
+                                            <label for="locker2_17" class="loc_lab">17</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_18" class="radio">
+    
+                                            <label for="locker2_18" class="loc_lab">18</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_19" class="radio">
+    
+                                            <label for="locker2_19" class="loc_lab">19</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_20" class="radio">
+    
+                                            <label for="locker2_20" class="loc_lab">20</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_21" class="radio">
+    
+                                            <label for="locker2_21" class="loc_lab">21</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_22" class="radio">
+    
+                                            <label for="locker2_22" class="loc_lab">22</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_23" class="radio">
+    
+                                            <label for="locker2_23" class="loc_lab">23</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_24" class="radio" disabled>
+    
+                                            <label for="locker2_24" class="loc_lab">24</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_25" class="radio">
+    
+                                            <label for="locker2_25" class="loc_lab">25</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_26" class="radio">
+    
+                                            <label for="locker2_26" class="loc_lab">26</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_27" class="radio">
+    
+                                            <label for="locker2_27" class="loc_lab">27</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_28" class="radio">
+    
+                                            <label for="locker2_28" class="loc_lab">28</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_29" class="radio">
+    
+                                            <label for="locker2_29" class="loc_lab">29</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_30" class="radio">
+    
+                                            <label for="locker2_30" class="loc_lab">30</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_31" class="radio">
+    
+                                            <label for="locker2_31" class="loc_lab">31</label>
+    
+                                        </div>
+    
+                                        <div class="loc">
+    
+                                            <input type="radio" name="locker2" id="locker2_32" class="radio">
+    
+                                            <label for="locker2_32" class="loc_lab">32</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="direc">아래 (바닥쪽)</div>
+    
+                                </div>
+    
+    
+    
+                                <div class="mon">
+    
+                                    <select class="slt2">
+    
+                                        <option>1개월</option>
+    
+                                        <option>2개월</option>
+    
+                                        <option>3개월</option>
+    
+                                    </select>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="btn_fixed">
+    
+                <button type="button" class="btn_common" onclick="location.href='us_pay.html'">다음</button>
+    
+            </div>
+    
+    
+    
+        </form>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+        $('#ms3_1').change(function(){
+    
+    
+    
+            if($(this).is(":checked")){
+    
+                $('#membership .gender_div').addClass('on');
+    
+    
+    
+                $('input[name="gender"]').prop("checked", false);
+    
+                $('input[name="locker1"]').prop("checked", false);
+    
+                $('input[name="locker2"]').prop("checked", false);
+    
+    
+    
+                $('.info').removeClass('on');
+    
+            }else{
+    
+                $('.g_tab').removeClass('on');
+    
+                $('#membership .gender_div').removeClass('on');
+    
+            }
+    
+        });
+    
+    
+    
+    
+    
+        $('input[name="gender"]').change(function(){
+    
+            if($('#male').is(":checked")){
+    
+                $('.info').removeClass('on');
+    
+                $('.info.male').addClass('on');
+    
+    
+    
+                $('.g_tab').removeClass('on');
+    
+                $('.g_tab.male').addClass('on');
+    
+    
+    
+                $('input[name="locker1"]').prop("checked", false);
+    
+                
+    
+            }else if($('#female').is(":checked")){
+    
+                $('.info').removeClass('on');
+    
+                $('.info.female').addClass('on');
+    
+    
+    
+                $('.g_tab').removeClass('on');
+    
+                $('.g_tab.female').addClass('on');
+    
+    
+    
+                $('input[name="locker2"]').prop("checked", false);
+    
+            }
+    
+        });
+    
+    </script>
+    
+
+</body>
+
+</html>

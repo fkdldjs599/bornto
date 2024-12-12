@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header s_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">PT 설문조사</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="pt_survey" class="form">
+
+        <div class="pd15">
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">1. 주요 목표가 무엇인가요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">1순위: 다이어트</div>
+    
+                    <div class="mb3">2순위: 다이어트</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">2. "꿈에 그리는 몸매"는 어떤 것인가요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">슬림한 몸매</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">3. 목표 부위는 어디인가요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">1순위: 복근</div>
+    
+                    <div class="mb3">2순위: 복근</div>
+    
+                    <div class="mb3">3순위: 복근</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">4. 귀하의 피트니스 경험을 잘 설명하는 것은 무엇인가요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">근육이나 체지방이 잘 생기지 않습니다.</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">5. 운동을 얼마나 자주 할 계획인가요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">거의 매일 운동</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">6. 다음과 같은 문제로 어려움을 겪고 있나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">없음</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">7. 근무 일정이 어떻게 되나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">주간 근무</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">8. 하루를 보통 어떻게 보내시나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">대부분 하루를 앉아서 보냅니다</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">9. 하루에 보통 얼마나 자나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">짧은 휴식 (5시간 미만)</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">10. 하루에 보통 얼마나 자나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">짧은 휴식 (5시간 미만)</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">11. 아침을 주로 언제 먹나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">아침 6시 ~ 8시에 먹어요</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">12. 아침을 주로 언제 먹나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">하루에 1끼 먹어요</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">13. 잠들기 4시간이내 야식을 얼마나 자주 먹나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">야식 주 1회</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">14. 어떤 식단을 선호하시나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">클래식 다 좋아합니다.</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">15. 다음과 같은 나쁜 습관이 있나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">없음</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">16. 식사이외에 간식을 얼마나 자주 먹나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">거의 매일</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">17. PT 목표에 정해진기간이 있나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">1개월</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">18. 음주를 얼마나 자주 하시나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">주2일 섭취</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">19. 특정식품에 알레르기가 있나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">없다 (못 먹는식품 없어요)</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">20. 복용하시고 계신 약이 있나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">없다 (비타민도 안먹어요)</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+            <div class="sv_block">
+    
+                <label class="sv_lab">21. 어떤 PT 수업을 희망하시나요?</label>
+    
+                <div class="sv_con">
+    
+                    <div class="mb3">[재활/교정] 저는 자세교정과 체형교정이 필요해요</div>
+    
+                </div>
+    
+            </div><!--sv_block-->
+    
+        </div>
+    
+    </section>
+
+
+</body>
+
+</html>

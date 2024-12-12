@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header s_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">정산</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="st_mypage" class="page">
+
+
+
+        <div class="pd15">
+    
+            <ul class="cm_ul">
+    
+                <li class="cm_li on">매출</li>
+    
+                <li class="cm_li">수업료</li>
+    
+            </ul>
+    
+    
+    
+            <div class="tab_wrap">
+    
+                <div class="tab on">
+    
+                    <div class="select_area">
+    
+                        <select name="date_filter" id="date_filter" class="slt2">
+    
+                            <option>월간</option>
+    
+                            <option>기간</option>
+    
+                        </select>
+    
+                        <div class="d_wrap vt_mid">
+    
+                            <div class="date_area on vt_mid">
+    
+                                <button type="button" class="prev d_btns">
+    
+                                    <img src="../../img/arrow_left_gray.png" alt="이전달로">
+    
+                                </button>
+    
+                                <div class="vt_mid month">5월</div>
+    
+                                <button type="button" class="next d_btns">
+    
+                                    <img src="../../img/arrow_right_gray.png" alt="다음달로">
+    
+                                </button>
+    
+                            </div>
+    
+                            <div class="date_area vt_mid">
+    
+                                <input type="text" name="start_date" id="start_date" value="2024.05.01" class="date">
+    
+                                <div class="vt_mid gap">~</div>
+    
+                                <input type="text" name="end_date" id="end_date" value="2024.05.15" class="date">
+    
+                                <script>
+    
+                                    $(function(){
+    
+                                        $('#start_date').datepicker({
+    
+                                            dateFormat : 'yy.mm.dd',
+    
+                                        });
+    
+                                        $('#end_date').datepicker({
+    
+                                            dateFormat : 'yy.mm.dd',
+    
+                                        });
+    
+                                    })
+    
+                                </script>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                    </div><!--sel_area-->
+    
+    
+    
+                    <div class="box_area">
+    
+                        <div class="box on">
+    
+                            <div class="box_top">
+    
+                                <div class="bt_l vt_mid">전체</div>
+    
+                                <div class="bt_r vt_mid">n건</div>
+    
+                            </div>
+    
+                            <div class="box_bot">
+    
+                                <span class="fs20">800,000</span>
+    
+                                <span class="fs12">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="box">
+    
+                            <div class="box_top">
+    
+                                <div class="bt_l vt_mid">계좌이체</div>
+    
+                                <div class="bt_r vt_mid">n건</div>
+    
+                            </div>
+    
+                            <div class="box_bot">
+    
+                                <span class="fs20">800,000</span>
+    
+                                <span class="fs12">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="box">
+    
+                            <div class="box_top">
+    
+                                <div class="bt_l vt_mid">카드</div>
+    
+                                <div class="bt_r vt_mid">n건</div>
+    
+                            </div>
+    
+                            <div class="box_bot">
+    
+                                <span class="fs20">800,000</span>
+    
+                                <span class="fs12">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="box">
+    
+                            <div class="box_top">
+    
+                                <div class="bt_l vt_mid">현금</div>
+    
+                                <div class="bt_r vt_mid">n건</div>
+    
+                            </div>
+    
+                            <div class="box_bot">
+    
+                                <span class="fs20">800,000</span>
+    
+                                <span class="fs12">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="box">
+    
+                            <div class="box_top">
+    
+                                <div class="bt_l vt_mid">미수금 계좌이체</div>
+    
+                                <div class="bt_r vt_mid">n건</div>
+    
+                            </div>
+    
+                            <div class="box_bot">
+    
+                                <span class="fs20">800,000</span>
+    
+                                <span class="fs12">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="data_area">
+    
+                        <div class="filter">
+    
+                            <select class="slt2 sel1">
+    
+                                <option>전체</option>
+    
+                                <option>계좌이체</option>
+    
+                                <option>카드</option>
+    
+                                <option>현금</option>
+    
+                                <option>미수금 계좌이체</option>
+    
+                            </select>
+    
+                            <select class="slt2 sel2">
+    
+                                <option>직원 전체</option>
+    
+                                <option>직원1</option>
+    
+                                <option>직원2</option>
+    
+                            </select>
+    
+                            <div class="btn_area vt_mid">
+    
+                                <button type="button" class="excel_btn">엑셀 다운로드</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="search_area">
+    
+                            <div class="s_left vt_mid">총 n건 (800,000원)</div>
+    
+                            <div class="s_area vt_mid">
+    
+                                <input type="text" name="search" id="search" class="search" placeholder="회원 이름 검색">
+    
+                                <button type="button" class="s_btn">
+    
+                                    <img src="../../img/s_btn.png" alt="검색">
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <table class="p_table">
+    
+                            <tr>
+    
+                                <th class="th">결제수단</th>
+    
+                                <th class="th">금액</th>
+    
+                                <th class="th">회원</th>
+    
+                                <th class="th">직원</th>
+    
+                                <th class="th th5">결제일</th>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">현금</td>
+    
+                                <td class="td">690,000</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td td5">2024. 05. 05</td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">카드</td>
+    
+                                <td class="td">690,000</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td td5">2024. 05. 05</td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">계좌이체</td>
+    
+                                <td class="td">690,000</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td td5">2024. 05. 05</td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">현금</td>
+    
+                                <td class="td">690,000</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td td5">2024. 05. 05</td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">카드</td>
+    
+                                <td class="td">690,000</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td td5">2024. 05. 05</td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">계좌이체</td>
+    
+                                <td class="td">690,000</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td td5">2024. 05. 05</td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">미수금<br>계좌이체</td>
+    
+                                <td class="td">690,000</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td td5">2024. 05. 05</td>
+    
+                            </tr>
+    
+                        </table>
+    
+    
+    
+                        <!-- <div class="all_area">
+    
+                            <button type="button" class="all_btn">페이지 일괄 승인</button>
+    
+                        </div> -->
+    
+                    </div>
+    
+    
+    
+                    <div class="page_wrap mb30">
+    
+                        <button type="button" class="p_btns prev">
+    
+                            <img src="../../img/btn_prev.png" alt="이전 페이지로">
+    
+                        </button>
+    
+                        <div class="num_wrap vt_mid">
+    
+                            <a href="" class="num">1</a>
+    
+                            <a href="" class="num on">2</a>
+    
+                            <a href="" class="num">3</a>
+    
+                        </div>
+    
+                        <button type="button" class="p_btns next">
+    
+                            <img src="../../img/btn_next.png" alt="다음 페이지로">
+    
+                        </button>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="tab">
+    
+                    <div class="select_area">
+    
+                        <select name="date_filter2" id="date_filter2" class="slt2">
+    
+                            <option>월간</option>
+    
+                            <option>기간</option>
+    
+                        </select>
+    
+                        <div class="d_wrap vt_mid">
+    
+                            <div class="date_area on vt_mid">
+    
+                                <button type="button" class="prev d_btns">
+    
+                                    <img src="../../img/arrow_left_gray.png" alt="이전달로">
+    
+                                </button>
+    
+                                <div class="vt_mid month">5월</div>
+    
+                                <button type="button" class="next d_btns">
+    
+                                    <img src="../../img/arrow_right_gray.png" alt="다음달로">
+    
+                                </button>
+    
+                            </div>
+    
+                            <div class="date_area vt_mid">
+    
+                                <input type="text" name="start_date" id="start_date" value="2024.05.01" class="date">
+    
+                                <div class="vt_mid gap">~</div>
+    
+                                <input type="text" name="end_date" id="end_date" value="2024.05.15" class="date">
+    
+                                <script>
+    
+                                    $(function(){
+    
+                                        $('#start_date').datepicker({
+    
+                                            dateFormat : 'yy.mm.dd',
+    
+                                        });
+    
+                                        $('#end_date').datepicker({
+    
+                                            dateFormat : 'yy.mm.dd',
+    
+                                        });
+    
+                                    })
+    
+                                </script>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                    </div><!--sel_area-->
+    
+    
+    
+                    <div class="box_area">
+    
+                        <div class="box on">
+    
+                            <div class="box_top">
+    
+                                <div class="bt_l vt_mid">전체</div>
+    
+                                <div class="bt_r vt_mid">n건</div>
+    
+                            </div>
+    
+                            <div class="box_bot">
+    
+                                <span class="fs20">800,000</span>
+    
+                                <span class="fs12">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="box">
+    
+                            <div class="box_top">
+    
+                                <div class="bt_l vt_mid">정산금</div>
+    
+                                <div class="bt_r vt_mid">n건</div>
+    
+                            </div>
+    
+                            <div class="box_bot">
+    
+                                <span class="fs20">800,000</span>
+    
+                                <span class="fs12">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="box">
+    
+                            <div class="box_top">
+    
+                                <div class="bt_l vt_mid">미정산금</div>
+    
+                                <div class="bt_r vt_mid">n건</div>
+    
+                            </div>
+    
+                            <div class="box_bot">
+    
+                                <span class="fs20">800,000</span>
+    
+                                <span class="fs12">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="data_area">
+    
+                        <div class="filter">
+    
+                            <select class="slt2 sel1">
+    
+                                <option>전체</option>
+    
+                                <option>계좌이체</option>
+    
+                                <option>카드</option>
+    
+                                <option>현금</option>
+    
+                            </select>
+    
+                            <select class="slt2 sel2">
+    
+                                <option>직원 전체</option>
+    
+                                <option>직원1</option>
+    
+                                <option>직원2</option>
+    
+                            </select>
+    
+                            <div class="btn_area vt_mid">
+    
+                                <button type="button" class="excel_btn">엑셀 다운로드</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="search_area">
+    
+                            <div class="s_left vt_mid">총 n건 (800,000원)</div>
+    
+                            <div class="s_area vt_mid">
+    
+                                <input type="text" name="search" id="search" class="search" placeholder="회원 이름 검색">
+    
+                                <button type="button" class="s_btn">
+    
+                                    <img src="../../img/s_btn.png" alt="검색">
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <table class="p_table">
+    
+                            <tr>
+    
+                                <th class="th">직원</th>
+    
+                                <th class="th">회원</th>
+    
+                                <th class="th th3">수업일시</th>
+    
+                                <th class="th">수업료</th>
+    
+                                <th class="th th5">승인 여부</th>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td td3">2024.05.10<br>11:00~11:30</td>
+    
+                                <td class="td">11,270</td>
+    
+                                <td class="td td5">
+    
+                                    <button type="button" class="td5_btns td5_1">승인</button>/<button type="button" class="td5_btns td5_2">반려</button>
+    
+                                </td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td td3">2024.05.10<br>11:00~11:30</td>
+    
+                                <td class="td">11,270</td>
+    
+                                <td class="td td5">
+    
+                                    <button type="button" class="td5_btns td5_1">승인</button>/<button type="button" class="td5_btns td5_2">반려</button>
+    
+                                </td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td td3">2024.05.10<br>11:00~11:30</td>
+    
+                                <td class="td">11,270</td>
+    
+                                <td class="td td5">
+    
+                                    <button type="button" class="td5_btns td5_1">승인</button>/<button type="button" class="td5_btns td5_2">반려</button>
+    
+                                </td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td td3">2024.05.10<br>11:00~11:30</td>
+    
+                                <td class="td">11,270</td>
+    
+                                <td class="td td5">
+    
+                                    <button type="button" class="td5_btns td5_1">승인</button>/<button type="button" class="td5_btns td5_2">반려</button>
+    
+                                </td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td td3">2024.05.10<br>11:00~11:30</td>
+    
+                                <td class="td">11,270</td>
+    
+                                <td class="td td5">
+    
+                                    <button type="button" class="td5_btns td5_1">승인</button>/<button type="button" class="td5_btns td5_2">반려</button>
+    
+                                </td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td td3">2024.05.10<br>11:00~11:30</td>
+    
+                                <td class="td">11,270</td>
+    
+                                <td class="td td5">
+    
+                                    <button type="button" class="td5_btns td5_1">승인</button>/<button type="button" class="td5_btns td5_2">반려</button>
+    
+                                </td>
+    
+                            </tr>
+    
+                            <tr>
+    
+                                <td class="td">직원이름</td>
+    
+                                <td class="td">회원이름</td>
+    
+                                <td class="td td3">2024.05.10<br>11:00~11:30</td>
+    
+                                <td class="td">11,270</td>
+    
+                                <td class="td td5">
+    
+                                    <button type="button" class="td5_btns td5_1">승인</button>/<button type="button" class="td5_btns td5_2">반려</button>
+    
+                                </td>
+    
+                            </tr>
+    
+                        </table>
+    
+    
+    
+                        <div class="all_area">
+    
+                            <button type="button" class="all_btn">페이지 일괄 승인</button>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="page_wrap mb30">
+    
+                        <button type="button" class="p_btns prev">
+    
+                            <img src="../../img/btn_prev.png" alt="이전 페이지로">
+    
+                        </button>
+    
+                        <div class="num_wrap vt_mid">
+    
+                            <a href="" class="num">1</a>
+    
+                            <a href="" class="num on">2</a>
+    
+                            <a href="" class="num">3</a>
+    
+                        </div>
+    
+                        <button type="button" class="p_btns next">
+    
+                            <img src="../../img/btn_next.png" alt="다음 페이지로">
+    
+                        </button>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </section>
+    
+    
+    
+    <script>
+    
+    
+    
+        $('#date_filter').change(function(){
+    
+            var dateSelect = document.getElementById("date_filter");
+    
+            var text = dateSelect.options[document.getElementById("date_filter").selectedIndex].text;
+    
+            if(text == "월간"){
+    
+                $(this).next().children('.date_area').removeClass('on');
+    
+                $(this).next().children('.date_area').eq(0).addClass('on');
+    
+            }else if(text == "기간"){
+    
+                $(this).next().children('.date_area').removeClass('on');
+    
+                $(this).next().children('.date_area').eq(1).addClass('on'); 
+    
+            }
+    
+        });
+    
+    
+    
+        $('#date_filter2').change(function(){
+    
+            var dateSelect = document.getElementById("date_filter2");
+    
+            var text = dateSelect.options[document.getElementById("date_filter2").selectedIndex].text;
+    
+            if(text == "월간"){
+    
+                $(this).next().children('.date_area').removeClass('on');
+    
+                $(this).next().children('.date_area').eq(0).addClass('on');
+    
+            }else if(text == "기간"){
+    
+                $(this).next().children('.date_area').removeClass('on');
+    
+                $(this).next().children('.date_area').eq(1).addClass('on'); 
+    
+            }
+    
+        });
+    
+    
+    
+    
+    
+        $('#st_mypage .box_area .box').click(function(){
+    
+            $(this).parent().children('.box').removeClass('on');
+    
+            $(this).addClass('on');
+    
+        });
+    
+    
+    
+    
+    
+        //페이지 일괄승인
+    
+        $('.all_btn').click(function(){
+    
+            $('.pop2').addClass('on');
+    
+            $('.pop2 .p_h2').text('정산을 일괄 승인하시겠습니까?');
+    
+            $('.pop2 .p_btns.btn2').text('확인');
+    
+        });
+    
+    
+    
+        //수업료 > 승인/반려
+    
+        $('.td5_btns').click(function(){
+    
+            if($(this).hasClass('td5_1')){
+    
+                $('.pop2').addClass('on');
+    
+                $('.pop2 .p_h2').text('정산을 승인하시겠습니까?');
+    
+                $('.pop2 .p_btns.btn2').text('확인');
+    
+            }else if($(this).hasClass('td5_2')){
+    
+                $('.pop2').addClass('on');
+    
+                $('.pop2 .p_h2').text('정산을 반려하시겠습니까?');
+    
+                $('.pop2 .p_btns.btn2').text('확인');
+    
+            }
+    
+        })
+    
+    
+    
+    
+    
+        $('.pop2 .btn2').click(function(){
+    
+            location.href='st_mypage1_1.html'
+    
+        });
+    
+    
+    
+    </script>
+
+<footer class="footer">
+    <a href="st_index.html" class="foot_a">
+        <img src="../../img/nav1_st.png">
+        <div class="foot_t">홈</div>
+    </a>
+    <a href="st_schedule.html" class="foot_a">
+        <img src="../../img/nav2_st.png">
+        <div class="foot_t">일정</div>
+    </a>
+    <a href="st_people.html" class="foot_a">
+        <img src="../../img/nav3_st.png">
+        <div class="foot_t">인원</div>
+    </a>
+    <a href="st_tck_list.html" class="foot_a ">
+        <img src="../../img/nav4_st.png" style="width:24px;">
+        <div class="foot_t">수강권</div>
+    </a>
+    <a href="st_mypage.html" class="foot_a on">
+        <img src="../../img/nav5_st_on.png">
+        <div class="foot_t">마이</div>
+    </a>
+</footer>
+
+
+
+</body>
+
+</html>

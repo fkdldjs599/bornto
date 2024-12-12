@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <header class="header t_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">일정</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="schedule" class="page">
+
+        <!-- <div class="pd15">
+    
+            <ul class="cm_ul">
+    
+                <li class="cm_li on">일정 관리</li>
+    
+                <li class="cm_li">일정 등록</li>
+    
+            </ul>
+    
+        </div> -->
+    
+    
+    
+            <div class="tab_wrap">
+    
+                <div class="tab on">
+    
+                    <div class="pd15">
+    
+                        <div class="calendar">
+    
+                            <div class="cal_top">
+    
+                                <div class="ct_1 vt_mid">
+    
+                                    <button type="button" class="btns prev">
+    
+                                        <img src="../../img/cal_prev.png" alt="이전달">
+    
+                                    </button>
+    
+                                    <span class="vt_mid">2024년 5월</span>
+    
+                                    <button type="button" class="btns next">
+    
+                                        <img src="../../img/cal_next.png" alt="다음달">
+    
+                                    </button>
+    
+                                </div>
+    
+                                <!-- <div class="ct_2 vt_mid">
+    
+                                    오늘
+    
+                                </div> -->
+    
+                            </div>
+    
+    
+    
+                            <!--오늘 = today-->
+    
+                            <table class="c_table">
+    
+                                <tr>
+    
+                                    <th class="th">일</th>
+    
+                                    <th class="th">월</th>
+    
+                                    <th class="th">화</th>
+    
+                                    <th class="th">수</th>
+    
+                                    <th class="th">목</th>
+    
+                                    <th class="th">금</th>
+    
+                                    <th class="th">토</th>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td"></td>
+    
+                                    <td class="td"></td>
+    
+                                    <td class="td"></td>
+    
+                                    <td class="td">1</td>
+    
+                                    <td class="td">2</td>
+    
+                                    <td class="td">3</td>
+    
+                                    <td class="td">4</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td">5</td>
+    
+                                    <td class="td">6</td>
+    
+                                    <td class="td">7</td>
+    
+                                    <td class="td">8</td>
+    
+                                    <td class="td">9</td>
+    
+                                    <td class="td">10</td>
+    
+                                    <td class="td">11</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td">12</td>
+    
+                                    <td class="td">13</td>
+    
+                                    <td class="td">14</td>
+    
+                                    <td class="td">15</td>
+    
+                                    <td class="td">16</td>
+    
+                                    <td class="td">17</td>
+    
+                                    <td class="td">18</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td">19</td>
+    
+                                    <td class="td">20</td>
+    
+                                    <td class="td">21</td>
+    
+                                    <td class="td">22</td>
+    
+                                    <td class="td">23</td>
+    
+                                    <td class="td">24</td>
+    
+                                    <td class="td">25</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td">26</td>
+    
+                                    <td class="td">27</td>
+    
+                                    <td class="td">28</td>
+    
+                                    <td class="td">29</td>
+    
+                                    <td class="td today">30</td>
+    
+                                    <td class="td">31</td>
+    
+                                    <td class="td"></td>
+    
+                                </tr>
+    
+                            </table>
+    
+                        </div>
+    
+                    </div>
+    
+            
+    
+                    <div class="s_list">
+    
+                        <div class="pd15">
+    
+                            <div class="filter">
+    
+                                <select class="select2 sel1">
+    
+                                    <option>트레이너 전체</option>
+    
+                                    <option>트레이너1</option>
+    
+                                    <option>트레이너2</option>
+    
+                                </select>
+    
+                                <select class="select2 sel2">
+    
+                                    <option>일정 전체</option>
+    
+                                    <option>일정1</option>
+    
+                                    <option>일정2</option>
+    
+                                </select>
+    
+                            </div>
+    
+    
+    
+                            <div class="sa_wrap">
+    
+                                <a href="tr_schedule3.html" class="sl_a">
+    
+                                    <div class="s_a1 vt_mid">
+    
+                                        <div class="circle gray">
+    
+                                            <div class="grid">1:1</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="s_a2 vt_mid">
+    
+                                        <div class="sa_top">10:00 ~ 10:30</div>
+    
+                                        <div class="sa_bot">회원이름</div>
+    
+                                    </div>
+    
+                                    <div class="s_a3 vt_mid">
+    
+                                        <div class="sa_top">예약(1/1)</div>
+    
+                                        <div class="sa_bot">트레이너이름</div>
+    
+                                    </div>
+    
+                                </a>
+    
+                                <a href="tr_schedule3.html" class="sl_a">
+    
+                                    <div class="s_a1 vt_mid">
+    
+                                        <div class="circle blue">
+    
+                                            <div class="grid">1:1</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="s_a2 vt_mid">
+    
+                                        <div class="sa_top">10:00 ~ 10:30</div>
+    
+                                        <div class="sa_bot">회원이름</div>
+    
+                                    </div>
+    
+                                    <div class="s_a3 vt_mid">
+    
+                                        <div class="sa_top">예약(1/1)</div>
+    
+                                        <div class="sa_bot">트레이너1</div>
+    
+                                    </div>
+    
+                                </a>
+    
+                                <a href="tr_schedule3.html" class="sl_a">
+    
+                                    <div class="s_a1 vt_mid">
+    
+                                        <div class="circle blue">
+    
+                                            <div class="grid">1:1</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="s_a2 vt_mid">
+    
+                                        <div class="sa_top">10:00 ~ 10:30</div>
+    
+                                        <div class="sa_bot">회원이름</div>
+    
+                                    </div>
+    
+                                    <div class="s_a3 vt_mid">
+    
+                                        <div class="sa_top">예약(1/1)</div>
+    
+                                        <div class="sa_bot">트레이너2</div>
+    
+                                    </div>
+    
+                                </a>
+    
+                                <a href="tr_schedule3.html" class="sl_a">
+    
+                                    <div class="s_a1 vt_mid">
+    
+                                        <div class="circle blue">
+    
+                                            <div class="grid">휴식</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="s_a2 vt_mid">
+    
+                                        <div class="sa_top">10:00 ~ 10:30</div>
+    
+                                        <div class="sa_bot">트레이너이름</div>
+    
+                                    </div>
+    
+                                    <!-- <div class="s_a3 vt_mid">
+    
+                                        <div class="sa_top">예약(1/1)</div>
+    
+                                        <div class="sa_bot">트레이너1</div>
+    
+                                    </div> -->
+    
+                                </a>
+    
+                                <a href="tr_schedule3.html" class="sl_a">
+    
+                                    <div class="s_a1 vt_mid">
+    
+                                        <div class="circle blue">
+    
+                                            <div class="grid">1:1</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="s_a2 vt_mid">
+    
+                                        <div class="sa_top">10:00 ~ 10:30</div>
+    
+                                        <div class="sa_bot">회원이름</div>
+    
+                                    </div>
+    
+                                    <div class="s_a3 vt_mid">
+    
+                                        <div class="sa_top">예약(1/1)</div>
+    
+                                        <div class="sa_bot">트레이너2</div>
+    
+                                    </div>
+    
+                                </a>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="tab">
+    
+                    <div class="pd15">
+    
+                        <div class="calendar">
+    
+                            <div class="cal_top">
+    
+                                <div class="ct_1 vt_mid">
+    
+                                    <button type="button" class="btns prev">
+    
+                                        <img src="../../img/cal_prev.png" alt="이전달">
+    
+                                    </button>
+    
+                                    <span class="vt_mid">2024년 5월</span>
+    
+                                    <button type="button" class="btns next">
+    
+                                        <img src="../../img/cal_next.png" alt="다음달">
+    
+                                    </button>
+    
+                                </div>
+    
+                                <div class="ct_2 vt_mid">
+    
+                                    오늘
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <!--오늘 = today-->
+    
+                            <table class="c_table">
+    
+                                <tr>
+    
+                                    <th class="th">일</th>
+    
+                                    <th class="th">월</th>
+    
+                                    <th class="th">화</th>
+    
+                                    <th class="th">수</th>
+    
+                                    <th class="th">목</th>
+    
+                                    <th class="th">금</th>
+    
+                                    <th class="th">토</th>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td"></td>
+    
+                                    <td class="td"></td>
+    
+                                    <td class="td"></td>
+    
+                                    <td class="td">1</td>
+    
+                                    <td class="td">2</td>
+    
+                                    <td class="td">3</td>
+    
+                                    <td class="td">4</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td">5</td>
+    
+                                    <td class="td">6</td>
+    
+                                    <td class="td">7</td>
+    
+                                    <td class="td">8</td>
+    
+                                    <td class="td">9</td>
+    
+                                    <td class="td">10</td>
+    
+                                    <td class="td">11</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td">12</td>
+    
+                                    <td class="td">13</td>
+    
+                                    <td class="td">14</td>
+    
+                                    <td class="td">15</td>
+    
+                                    <td class="td">16</td>
+    
+                                    <td class="td">17</td>
+    
+                                    <td class="td">18</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td">19</td>
+    
+                                    <td class="td">20</td>
+    
+                                    <td class="td">21</td>
+    
+                                    <td class="td">22</td>
+    
+                                    <td class="td">23</td>
+    
+                                    <td class="td">24</td>
+    
+                                    <td class="td">25</td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="td">26</td>
+    
+                                    <td class="td">27</td>
+    
+                                    <td class="td">28</td>
+    
+                                    <td class="td">29</td>
+    
+                                    <td class="td today">30</td>
+    
+                                    <td class="td">31</td>
+    
+                                    <td class="td"></td>
+    
+                                </tr>
+    
+                            </table>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="s_list pt20">
+    
+                        <div class="pd15">
+    
+                            <div class="tr_wrap">
+    
+                                <div class="tr_block">
+    
+                                    <div class="tb_top">
+    
+                                        <div class="profile vt_mid">
+    
+                                            <div class="grid">
+    
+                                                <img src="../../img/profile3.png">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="txt vt_mid">본인이름</div>
+    
+                                    </div>
+    
+                                    <div class="tb_bot mySwiper">
+    
+                                        <ul class="swiper-wrapper tb_ul">
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t1_time" id="t1_time1" class="radio">
+    
+                                                <label for="t1_time1" class="lab">08:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t1_time" id="t1_time2" class="radio">
+    
+                                                <label for="t1_time2" class="lab">09:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t1_time" id="t1_time3" class="radio" disabled>
+    
+                                                <label for="t1_time3" class="lab">10:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t1_time" id="t1_time4" class="radio">
+    
+                                                <label for="t1_time4" class="lab">11:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t1_time" id="t1_time5" class="radio" disabled>
+    
+                                                <label for="t1_time5" class="lab">12:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t1_time" id="t1_time6" class="radio">
+    
+                                                <label for="t1_time6" class="lab">13:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t1_time" id="t1_time7" class="radio">
+    
+                                                <label for="t1_time7" class="lab">14:00</label>
+    
+                                            </li>
+    
+                                        </ul>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="tr_block">
+    
+                                    <div class="tb_top">
+    
+                                        <div class="profile vt_mid">
+    
+                                            <div class="grid">
+    
+                                                <img src="../../img/profile3.png">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="txt vt_mid">트레이너1</div>
+    
+                                    </div>
+    
+                                    <div class="tb_bot mySwiper">
+    
+                                        <ul class="swiper-wrapper tb_ul">
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t2_time" id="t2_time1" class="radio">
+    
+                                                <label for="t2_time1" class="lab">08:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t2_time" id="t2_time2" class="radio">
+    
+                                                <label for="t2_time2" class="lab">09:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t2_time" id="t2_time3" class="radio" disabled>
+    
+                                                <label for="t2_time3" class="lab">10:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t2_time" id="t2_time4" class="radio">
+    
+                                                <label for="t2_time4" class="lab">11:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t2_time" id="t2_time5" class="radio" disabled>
+    
+                                                <label for="t2_time5" class="lab">12:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t2_time" id="t2_time6" class="radio">
+    
+                                                <label for="t2_time6" class="lab">13:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t2_time" id="t2_time7" class="radio">
+    
+                                                <label for="t2_time7" class="lab">14:00</label>
+    
+                                            </li>
+    
+                                        </ul>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="tr_block">
+    
+                                    <div class="tb_top">
+    
+                                        <div class="profile vt_mid">
+    
+                                            <div class="grid">
+    
+                                                <img src="../../img/profile3.png">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="txt vt_mid">트레이너2</div>
+    
+                                    </div>
+    
+                                    <div class="tb_bot mySwiper">
+    
+                                        <ul class="swiper-wrapper tb_ul">
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t3_time" id="t3_time1" class="radio">
+    
+                                                <label for="t3_time1" class="lab">08:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t3_time" id="t3_time2" class="radio">
+    
+                                                <label for="t3_time2" class="lab">09:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t3_time" id="t3_time3" class="radio" disabled>
+    
+                                                <label for="t3_time3" class="lab">10:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t3_time" id="t3_time4" class="radio">
+    
+                                                <label for="t3_time4" class="lab">11:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t3_time" id="t3_time5" class="radio" disabled>
+    
+                                                <label for="t3_time5" class="lab">12:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t3_time" id="t3_time6" class="radio">
+    
+                                                <label for="t3_time6" class="lab">13:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t3_time" id="t3_time7" class="radio">
+    
+                                                <label for="t3_time7" class="lab">14:00</label>
+    
+                                            </li>
+    
+                                        </ul>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="tr_block">
+    
+                                    <div class="tb_top">
+    
+                                        <div class="profile vt_mid">
+    
+                                            <div class="grid">
+    
+                                                <img src="../../img/profile3.png">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="txt vt_mid">트레이너3</div>
+    
+                                    </div>
+    
+                                    <div class="tb_bot mySwiper">
+    
+                                        <ul class="swiper-wrapper tb_ul">
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t4_time" id="t4_time1" class="radio">
+    
+                                                <label for="t4_time1" class="lab">08:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t4_time" id="t4_time2" class="radio">
+    
+                                                <label for="t4_time2" class="lab">09:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t4_time" id="t4_time3" class="radio" disabled>
+    
+                                                <label for="t4_time3" class="lab">10:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t4_time" id="t4_time4" class="radio">
+    
+                                                <label for="t4_time4" class="lab">11:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t4_time" id="t4_time5" class="radio" disabled>
+    
+                                                <label for="t4_time5" class="lab">12:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t4_time" id="t4_time6" class="radio">
+    
+                                                <label for="t4_time6" class="lab">13:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t4_time" id="t4_time7" class="radio">
+    
+                                                <label for="t4_time7" class="lab">14:00</label>
+    
+                                            </li>
+    
+                                        </ul>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="tr_block">
+    
+                                    <div class="tb_top">
+    
+                                        <div class="profile vt_mid">
+    
+                                            <div class="grid">
+    
+                                                <img src="../../img/profile3.png">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="txt vt_mid">트레이너4</div>
+    
+                                    </div>
+    
+                                    <div class="tb_bot mySwiper">
+    
+                                        <ul class="swiper-wrapper tb_ul">
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t5_time" id="t5_time1" class="radio">
+    
+                                                <label for="t5_time1" class="lab">08:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t5_time" id="t5_time2" class="radio">
+    
+                                                <label for="t5_time2" class="lab">09:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t5_time" id="t5_time3" class="radio" disabled>
+    
+                                                <label for="t5_time3" class="lab">10:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t5_time" id="t5_time4" class="radio">
+    
+                                                <label for="t5_time4" class="lab">11:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t5_time" id="t5_time5" class="radio" disabled>
+    
+                                                <label for="t5_time5" class="lab">12:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t5_time" id="t5_time6" class="radio">
+    
+                                                <label for="t5_time6" class="lab">13:00</label>
+    
+                                            </li>
+    
+                                            <li class="swiper-slide tb_li">
+    
+                                                <input type="radio" name="t5_time" id="t5_time7" class="radio">
+    
+                                                <label for="t5_time7" class="lab">14:00</label>
+    
+                                            </li>
+    
+                                        </ul>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="add bt14">
+    
+                        <button type="button" class="add_btn">
+    
+                            <img src="../../img/add_btn.png" alt="이벤트 추가">
+    
+                        </button>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    </section>
+
+    <footer class="footer t_foot">
+        <a href="tr_index.html" class="foot_a">
+            <img src="../../img/nav1_st.png">
+            <div class="foot_t">홈</div>
+        </a>
+        <a href="tr_schedule.html" class="foot_a on">
+            <img src="../../img/nav2_st_on.png">
+            <div class="foot_t">일정</div>
+        </a>
+        <a href="tr_people.html" class="foot_a ">
+            <img src="../../img/nav3_st.png">
+            <div class="foot_t">인원</div>
+        </a>
+        <!-- <a href="tr_tck_sub.html" class="foot_a ">
+            <img src="../../img/nav4_st>.png" style="width:24px;">
+            <div class="foot_t">수강권</div>
+        </a> -->
+        <a href="tr_mypage.html" class="foot_a ">
+            <img src="../../img/nav5_st.png">
+            <div class="foot_t">마이</div>
+        </a>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header s_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">인원</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="people" class="page">
+
+        <div class="pd15">
+    
+            <ul class="cm_ul">
+    
+                <li class="cm_li on">회원</li>
+    
+                <li class="cm_li">직원</li>
+    
+            </ul>
+    
+        </div>
+    
+    
+    
+        <div class="tab_wrap">
+    
+            <div class="tab tab1 on">
+    
+                <div class="pd15">
+    
+                    <div class="s_area">
+    
+                        <input type="text" name="search" id="search" class="search" placeholder="회원이름검색/번호 검색">
+    
+                        <button type="button" class="s_btn">
+    
+                            <img src="../../img/s_btn.png" alt="검색">
+    
+                        </button>
+    
+                    </div>
+    
+    
+    
+                    <div class="f_area">
+    
+                        <div class="fa1">
+    
+                            <div class="fa1_l vt_mid">총 n명</div>
+    
+                            <div class="fa1_r vt_mid">
+    
+                                <select class="slt2">
+    
+                                    <option>정렬</option>
+    
+                                    <option>이름</option>
+    
+                                    <option>잔여</option>
+    
+                                    <option>방문</option>
+    
+                                </select>
+    
+                                <select class="slt2">
+    
+                                    <option>전체</option>
+    
+                                    <option>정기회원권</option>
+    
+                                    <option>기간회원권</option>
+    
+                                    <option>피티회원권</option>
+    
+                                    <option>그룹회원권</option>
+    
+                                    <option>A전담회원</option>
+    
+                                    <option>B전담회원</option>
+    
+                                    <option>C전담회원</option>
+    
+                                </select>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="fa2">
+    
+                            <div class="fa2_l vt_mid">
+    
+                                <button type="button" class="b_btn bbtn1">전체선택</button>
+    
+                            </div>
+    
+                            <div class="fa2_r vt_mid">
+    
+                                <button type="button" class="b_btn bbtn2" onclick="location.href='st_people_send1.html'">일괄 문자</button>
+    
+                                <button type="button" class="b_btn bbtn3" onclick="location.href='st_people_send2.html'">일괄 팝업</button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="d_area">
+    
+                    <div class="d_table">
+    
+                        <div class="line first">
+    
+                            <div class="th th1"></div>
+    
+                            <div class="th th2">회원이름</div>
+    
+                            <div class="th">최근 방문</div>
+    
+                            <div class="th">잔여일</div>
+    
+                            <div class="th">수강권</div>
+    
+                        </div>
+    
+    
+    
+                        <div>
+    
+                            <input type="checkbox" name="mem" id="mem1" class="ck">
+    
+                            <label for="mem1" class="line">
+    
+                                <div class="td td1">
+    
+                                    <div class="profile">
+    
+                                        <div class="grid">
+    
+                                            <img src="../../img/pro_empty2.png">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="td td2">
+    
+                                    <div class="div2_top">회원이름</div>
+    
+                                    <div class="div2_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                                <div class="td">8/20</div>
+    
+                                <div class="td">57일</div>
+    
+                                <div class="td">
+    
+                                    <button type="button" class="ticket">수강권</button>
+    
+                                </div>
+    
+                            </label>
+    
+                        </div>
+    
+                        <div>
+    
+                            <input type="checkbox" name="mem" id="mem2" class="ck">
+    
+                            <label for="mem2" class="line">
+    
+                                <div class="td td1">
+    
+                                    <div class="profile">
+    
+                                        <div class="grid">
+    
+                                            <img src="../../img/profile2.png">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="td td2">
+    
+                                    <div class="div2_top">회원이름</div>
+    
+                                    <div class="div2_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                                <div class="td">8/20</div>
+    
+                                <div class="td">57일</div>
+    
+                                <div class="td">
+    
+                                    <!-- <button type="button" class="ticket">수강권</button> -->
+    
+                                </div>
+    
+                            </label>
+    
+                        </div>
+    
+                        <div>
+    
+                            <input type="checkbox" name="mem" id="mem3" class="ck">
+    
+                            <label for="mem3" class="line">
+    
+                                <div class="td td1">
+    
+                                    <div class="profile">
+    
+                                        <div class="grid">
+    
+                                            <img src="../../img/pro_empty2.png">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="td td2">
+    
+                                    <div class="div2_top">회원이름</div>
+    
+                                    <div class="div2_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                                <div class="td">8/20</div>
+    
+                                <div class="td">57일</div>
+    
+                                <div class="td">
+    
+                                    <button type="button" class="ticket">수강권</button>
+    
+                                </div>
+    
+                            </label>
+    
+                        </div>
+    
+                        <div>
+    
+                            <input type="checkbox" name="mem" id="mem4" class="ck">
+    
+                            <label for="mem4" class="line">
+    
+                                <div class="td td1">
+    
+                                    <div class="profile">
+    
+                                        <div class="grid">
+    
+                                            <img src="../../img/profile2.png">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="td td2">
+    
+                                    <div class="div2_top">회원이름</div>
+    
+                                    <div class="div2_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                                <div class="td">8/20</div>
+    
+                                <div class="td">57일</div>
+    
+                                <div class="td">
+    
+                                    <!-- <button type="button" class="ticket">수강권</button> -->
+    
+                                </div>
+    
+                            </label>
+    
+                        </div>
+    
+                        <div>
+    
+                            <input type="checkbox" name="mem" id="mem5" class="ck">
+    
+                            <label for="mem5" class="line">
+    
+                                <div class="td td1">
+    
+                                    <div class="profile">
+    
+                                        <div class="grid">
+    
+                                            <img src="../../img/pro_empty2.png">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="td td2">
+    
+                                    <div class="div2_top">회원이름</div>
+    
+                                    <div class="div2_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                                <div class="td">8/20</div>
+    
+                                <div class="td">57일</div>
+    
+                                <div class="td">
+    
+                                    <button type="button" class="ticket">수강권</button>
+    
+                                </div>
+    
+                            </label>
+    
+                        </div>
+    
+                        <div>
+    
+                            <input type="checkbox" name="mem" id="mem6" class="ck">
+    
+                            <label for="mem6" class="line">
+    
+                                <div class="td td1">
+    
+                                    <div class="profile">
+    
+                                        <div class="grid">
+    
+                                            <img src="../../img/profile2.png">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="td td2">
+    
+                                    <div class="div2_top">회원이름</div>
+    
+                                    <div class="div2_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                                <div class="td">8/20</div>
+    
+                                <div class="td">57일</div>
+    
+                                <div class="td">
+    
+                                    <!-- <button type="button" class="ticket">수강권</button> -->
+    
+                                </div>
+    
+                            </label>
+    
+                        </div>
+    
+                        <div>
+    
+                            <input type="checkbox" name="mem" id="mem7" class="ck">
+    
+                            <label for="mem7" class="line">
+    
+                                <div class="td td1">
+    
+                                    <div class="profile">
+    
+                                        <div class="grid">
+    
+                                            <img src="../../img/profile2.png">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="td td2">
+    
+                                    <div class="div2_top">회원이름</div>
+    
+                                    <div class="div2_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                                <div class="td">8/20</div>
+    
+                                <div class="td">57일</div>
+    
+                                <div class="td">
+    
+                                    <!-- <button type="button" class="ticket">수강권</button> -->
+    
+                                </div>
+    
+                            </label>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="page_wrap mb30">
+    
+                    <button type="button" class="p_btns prev">
+    
+                        <img src="../../img/btn_prev.png" alt="이전 페이지로">
+    
+                    </button>
+    
+                    <div class="num_wrap vt_mid">
+    
+                        <a href="" class="num">1</a>
+    
+                        <a href="" class="num on">2</a>
+    
+                        <a href="" class="num">3</a>
+    
+                    </div>
+    
+                    <button type="button" class="p_btns next">
+    
+                        <img src="../../img/btn_next.png" alt="다음 페이지로">
+    
+                    </button>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="tab tab2">
+    
+                <div class="pd15">
+    
+                    <div class="s_area">
+    
+                        <input type="text" name="search2" id="search2" class="search" placeholder="직원 이름 검색">
+    
+                        <button type="button" class="s_btn">
+    
+                            <img src="../../img/s_btn.png" alt="검색">
+    
+                        </button>
+    
+                    </div>
+    
+    
+    
+                    <div class="d_area">
+    
+                        <div class="d_table">
+    
+                            <a href="st_staff.html" class="staff_a">
+    
+                                <div class="profile vt_mid">
+    
+                                    <div class="grid">
+    
+                                        <img src="../../img/pro_empty.png">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="staff_info vt_mid">
+    
+                                    <div class="si_top">직원이름</div>
+    
+                                    <div class="si_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                            </a>
+    
+                            <a href="st_staff.html" class="staff_a">
+    
+                                <div class="profile vt_mid">
+    
+                                    <div class="grid">
+    
+                                        <img src="../../img/profile2.png">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="staff_info vt_mid">
+    
+                                    <div class="si_top">직원이름</div>
+    
+                                    <div class="si_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                            </a>
+    
+                            <a href="st_staff.html" class="staff_a">
+    
+                                <div class="profile vt_mid">
+    
+                                    <div class="grid">
+    
+                                        <img src="../../img/pro_empty.png">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="staff_info vt_mid">
+    
+                                    <div class="si_top">직원이름</div>
+    
+                                    <div class="si_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                            </a>
+    
+                            <a href="st_staff.html" class="staff_a">
+    
+                                <div class="profile vt_mid">
+    
+                                    <div class="grid">
+    
+                                        <img src="../../img/profile2.png">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="staff_info vt_mid">
+    
+                                    <div class="si_top">직원이름</div>
+    
+                                    <div class="si_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                            </a>
+    
+                            <a href="st_staff.html" class="staff_a">
+    
+                                <div class="profile vt_mid">
+    
+                                    <div class="grid">
+    
+                                        <img src="../../img/pro_empty.png">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="staff_info vt_mid">
+    
+                                    <div class="si_top">직원이름</div>
+    
+                                    <div class="si_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                            </a>
+    
+                            <a href="st_staff.html" class="staff_a">
+    
+                                <div class="profile vt_mid">
+    
+                                    <div class="grid">
+    
+                                        <img src="../../img/profile2.png">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="staff_info vt_mid">
+    
+                                    <div class="si_top">직원이름</div>
+    
+                                    <div class="si_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                            </a>
+    
+                            <a href="st_staff.html" class="staff_a">
+    
+                                <div class="profile vt_mid">
+    
+                                    <div class="grid">
+    
+                                        <img src="../../img/pro_empty.png">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="staff_info vt_mid">
+    
+                                    <div class="si_top">직원이름</div>
+    
+                                    <div class="si_bot">010-1234-5678</div>
+    
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="add">
+    
+                    <button type="button" class="add_btn" onclick="location.href='st_staff_add.html'">
+    
+                        <img src="../../img/add_btn.png" alt="수강권 추가">
+    
+                    </button>
+    
+                </div>
+    
+    
+    
+                <div class="page_wrap mb30">
+    
+                    <button type="button" class="p_btns prev">
+    
+                        <img src="../../img/btn_prev.png" alt="이전 페이지로">
+    
+                    </button>
+    
+                    <div class="num_wrap vt_mid">
+    
+                        <a href="" class="num">1</a>
+    
+                        <a href="" class="num on">2</a>
+    
+                        <a href="" class="num">3</a>
+    
+                    </div>
+    
+                    <button type="button" class="p_btns next">
+    
+                        <img src="../../img/btn_next.png" alt="다음 페이지로">
+    
+                    </button>
+    
+                </div>  
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </section>
+    
+    
+    
+    
+    
+    <script>
+    
+        //회원 > 전체선택
+    
+        $('#people .f_area .bbtn1').each(function(data,index){
+    
+            $('#people .f_area .bbtn1').data('willAll', true);
+    
+        });
+    
+    
+    
+        $('#people .f_area .bbtn1').click(function(){
+    
+            if($(this).data('willAll')){
+    
+                $('#people .tab1 .d_table input[name="mem"]').prop("checked", true);
+    
+                $('#people .f_area .bbtn1').data('willAll', false);
+    
+            }else{
+    
+                $('#people .tab1 .d_table input[name="mem"]').prop("checked", false);
+    
+                $('#people .f_area .bbtn1').data('willAll', true);
+    
+            }
+    
+        });
+    
+    
+    
+    
+    
+        //회원 > 수강권
+    
+        $('#people .d_table .line .ticket').click(function(){
+    
+            location.href='st_people2.html'
+    
+        })
+    
+    </script>
+
+    <footer class="footer">
+        <a href="st_index.html" class="foot_a">
+            <img src="../../img/nav1_st.png">
+            <div class="foot_t">홈</div>
+        </a>
+        <a href="st_schedule.html" class="foot_a">
+            <img src="../../img/nav2_st.png">
+            <div class="foot_t">일정</div>
+        </a>
+        <a href="st_people.html" class="foot_a on">
+            <img src="../../img/nav3_st_on.png">
+            <div class="foot_t">인원</div>
+        </a>
+        <a href="st_tck_list.html" class="foot_a ">
+            <img src="../../img/nav4_st.png" style="width:24px;">
+            <div class="foot_t">수강권</div>
+        </a>
+        <a href="st_mypage.html" class="foot_a ">
+            <img src="../../img/nav5_st.png">
+            <div class="foot_t">마이</div>
+        </a>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">수강권 예약</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 음식 팝업 -->
+    <div class="b_pop fdpop">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="blue_bg">
+    
+    
+    
+            <div class="bp_title">
+    
+                <h2 class="p_h2 vt_mid">영양소 상세</h2>
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="../../img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="bp_con">
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">총 용량</h3>
+    
+                        <div class="bp_div vt_mid">100g</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">칼로리</h3>
+    
+                        <div class="bp_div vt_mid">100kcal</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">탄수화물</h3>
+    
+                        <div class="bp_div vt_mid">0g</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-당</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-대체 감미료</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-식이섬유</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">단백질</h3>
+    
+                        <div class="bp_div vt_mid">20g</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">지방</h3>
+    
+                        <div class="bp_div vt_mid">2g</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-포화지방</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-트랜스지방</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-다불포화지방</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-불포화지방</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">콜레스테롤</h3>
+    
+                        <div class="bp_div vt_mid">80mg</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">나트륨</h3>
+    
+                        <div class="bp_div vt_mid">45mg</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">칼륨</h3>
+    
+                        <div class="bp_div vt_mid">371mg</div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    </div>
+
+
+    <section id="tck" class="form res">
+
+        <div class="pd15">
+    
+            <div class="res_wrap">
+    
+                <div class="res_block">
+    
+                    <label for="" class="res_lab">선택된 수강권</label>
+    
+                    <div class="wid100">1:1 30분 10회 PT</div>
+    
+                </div>
+    
+                <div class="res_block">
+    
+                    <label for="" class="res_lab">담당 트레이너</label>
+    
+                    <select class="slt2 wid100">
+    
+                        <option>홍길동 트레이너 (일반)</option>
+    
+                        <option>홍길동 트레이너 (일반)</option>
+    
+                        <option>홍길동 트레이너 (일반)</option>
+    
+                    </select>
+    
+                </div>
+    
+                <div class="res_block">
+    
+                    <label class="res_lab">옵션선택</label>
+    
+                    <div class="option">
+    
+                        <div class="opt_title"> - [요일, 시간]사전 고정 예약</div>
+    
+                        <div class="opt_box">
+    
+                            <div class="ob_wrap2">
+    
+                                <div class="blue_num vt_mid">1.</div>
+    
+                                <div class="arrow vt_mid">
+    
+                                    <img src="../../img/arrow_up.png">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="ob_wrap2">
+    
+                                <div class="ob_top">날짜</div>
+    
+                                <div class="ob_bot">
+    
+                                <div class="i_wrap">
+    
+                                    <input type="text" name="stop_start" id="stop_start" class="date" placeholder="날짜를 선택해주세요.">
+    
+                                    <img src="../../img/select_down2.png">
+    
+                                </div>
+    
+                                <script>
+    
+                                    $(function(){
+    
+                                        $('#stop_start').datepicker({
+    
+                                            dateFormat : 'yy.mm.dd',
+    
+                                        });
+    
+                                    })
+    
+                                </script>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="ob_wrap2">
+    
+                                <div class="ob_top">시간</div>
+    
+                                <div class="ob_bot2 mySwiper2">
+    
+                                    <div class="swiper-wrapper">
+    
+                                        <div class="box2 swiper-slide">
+    
+                                            <input type="radio" name="res_time" id="res_time1" class="radio">
+    
+                                            <label for="res_time1" class="time">09:00</label>
+    
+                                        </div>
+    
+                                        <div class="box2 swiper-slide">
+    
+                                            <input type="radio" name="res_time" id="res_time2" class="radio">
+    
+                                            <label for="res_time2" class="time">10:00</label>
+    
+                                        </div>
+    
+                                        <div class="box2 swiper-slide">
+    
+                                            <input type="radio" name="res_time" id="res_time3" class="radio">
+    
+                                            <label for="res_time3" class="time">11:00</label>
+    
+                                        </div>
+    
+                                        <div class="box2 swiper-slide">
+    
+                                            <input type="radio" name="res_time" id="res_time4" class="radio" disabled>
+    
+                                            <label for="res_time4" class="time">12:00</label>
+    
+                                        </div>
+    
+                                        <div class="box2 swiper-slide">
+    
+                                            <input type="radio" name="res_time" id="res_time5" class="radio">
+    
+                                            <label for="res_time5" class="time">13:00</label>
+    
+                                        </div>
+    
+                                        <div class="box2 swiper-slide">
+    
+                                            <input type="radio" name="res_time" id="res_time6" class="radio">
+    
+                                            <label for="res_time6" class="time">14:00</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <script>
+    
+                                    var swiper = new Swiper(".mySwiper2", {
+    
+                                        slidesPerView:"auto",
+    
+                                        spaceBetween: 12,
+    
+                                        observer: true,
+    
+                                        observeParents: true, 
+    
+                                    });
+    
+                                </script>
+    
+                            </div>
+    
+                            <!-- <div class="ob_wrap2 center">
+    
+                                <button type="button" class="blue_btn">예약하기</button>
+    
+                            </div> -->
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- <div class="add_sd_area">
+    
+                        <button type="button" class="add_sd_btn">일정 추가</button>
+    
+                    </div> -->
+    
+                    <!-- <div class="sub">음영 처리된 시간은 예약완료, 대기 가능한 시간입니다.</div> -->
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+        <div class="btn_fixed">
+    
+            <button type="button" class="btn_common" onclick="location.href='us_tck_my5.html'">예약</button>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+    
+    
+        $('.res .option .blue_btn').click(function(){
+    
+            $('.pop2').addClass('on');
+    
+            $('.pop2 .p_h2').html("이미 다른 분이 예약한 시간대 입니다.<br>예약대기 알림을 신청하시겠습니까?");
+    
+            $('.pop2 .btn1').text("아니요");
+    
+            $('.pop2 .btn2').text("네");
+    
+            $('.pop2 .btn2').addClass('alarm');
+    
+        });
+    
+    
+    
+        $('.pop2 .btn2').click(function(){
+    
+            if($(this).hasClass('alarm')){ //예약대기 알림 신청
+    
+                $('.pop2').removeClass('on');
+    
+                $('.pop2 .btn2').removeClass('alarm');
+    
+    
+    
+                $('.pop1').addClass('on');
+    
+                $('.pop1 .p_h2').html("예약대기 알림 신청 완료되었습니다.<br>기존 예약 취소시 알림이 갑니다.");
+    
+            }else if($(this).hasClass('tr_match')){ //내 트레이너로 지정
+    
+                $('.pop2').removeClass('on');
+    
+                $('.pop2 .btn2').removeClass('tr_match');
+    
+    
+    
+                $('.pop1').addClass('on');
+    
+                $('.pop1 .p_h2').html("[트레이너이름] 트레이너가<br>내 담당 트레이너로 지정되었습니다.<div class='sub'>담당트레이너 변경을 원할시 지점방문 후 문의해주세요.</div>");
+    
+            }
+    
+        })
+    
+    
+    
+    
+    
+        //해당트레이너 내 담당트레이너로 지정
+    
+    
+    
+        // $('.res .btn_common').click(function(){
+    
+        //     $('.pop2').addClass('on');
+    
+        //     $('.pop2 .p_h2').html("해당 트레이너에게 이미 2회 예약하셨습니다.<br>[트레이너이름] 트레이너를<br>내 담당 트레이너로 지정하시겠습니까?<div class='sub'>다른 트레이너 수업을 예약하려면 '아니요' 선택 후<br>다른 트레이너 수업을 예약해주세요.</div>");
+    
+        //     $('.pop2 .p_btns.btn1').text("아니요")
+    
+        //     $('.pop2 .p_btns.btn2').text("네")
+    
+        // $('.pop2 .btn2').addClass('tr_match')
+    
+        // });
+    
+    
+    
+    
+    
+    
+    
+        //트레이너 > 팀장급 직책으로 수강권총횟수 변경될수있습니다
+    
+    
+    
+        // $('.res .btn_common').click(function(){
+    
+        //     $('.pop3').addClass('on');
+    
+        //     $('.pop3 .p_h2').html("해당 트레이너에게 이미 2회 예약하셨습니다.<br><span class='fw500'>[트레이너이름] 트레이너</span>를<br><span class='fw500'>내 담당 트레이너</span>로 지정하시겠습니까?");
+    
+    
+    
+        //     $('.pop3 .p_h2_2').html("<span class='fw500'>[트레이너이름] 트레이너</span>는 팀장급 직책으로<br>선택시 보유하고 계신 수강권 총 횟수가<br>변경될 수 있습니다.");
+    
+    
+    
+        //     $('.pop3 .p_h2_3').html("다른 트레이너 수업을 예약하려면 '아니요' 선택 후<br>다른 트레이너 수업을 예약해주세요.");
+    
+    
+    
+        //     $('.pop3 .btn1').text("아니요");
+    
+        //     $('.pop3 .btn2').text("네");
+    
+        // });
+    
+    
+    
+        // $('.pop3 .btn2').click(function(){
+    
+        //     $('.pop3').removeClass('on');
+    
+        //     $('.pop1').addClass('on');
+    
+        //     $('.pop1 .p_h2').html('[트레이너이름] 트레이너가<br>내 담당 트레이너로 지정되었습니다.<div class="sub">담당트레이너 변경을 원할시 지점방문 후 문의해주세요.</div>');
+    
+        // });
+    
+    
+    
+    
+    
+        //예약 가능횟수 초과
+    
+    
+    
+        // $('.res .btn_common').click(function(){
+    
+        //     $('.pop1').addClass('on');
+    
+        //     $('.pop1 .p_h2').html('예약 가능 횟수를 초과했어요.<div class="sub">수강권의 예약 가능한 최대 횟수를 확인해주세요.</div>');
+    
+        // });
+    
+    
+    
+    </script>
+
+</body>
+
+</html>

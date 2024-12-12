@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">운동</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 운동팝업 -->
+    <div class="b_pop edpop">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="blue_bg">
+    
+    
+    
+            <div class="bp_title">
+    
+                <h2 class="p_h2 vt_mid">벤치프레스</h2>
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="../../img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="bp_con">
+    
+                <div class="e_img_area">
+    
+                    <div class="grid">
+    
+                        <img src="../../img/ed_img.png" alt="벤치프레스">
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid fw500">도구</h3>
+    
+                        <div class="bp_div vt_mid fw500">바벨</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid fw500">타입</h3>
+    
+                        <div class="bp_div vt_mid">무게/횟수</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 fw500">운동방법</h3>
+    
+                        <div class="bp_detail">
+    
+                            1. 벤치에 가슴을 펴고 누운 상태에서 바벨을 어깨너비보다 조금 넓게 잡고 위로 들어올립니다.<br>
+    
+                            2. 가슴 근육의 이완을 느끼며 팔을 굽혀 바벨을 가슴 방향으로 내립니다.<br>
+    
+                            3. 가슴 근육의 수축을 느끼며 몸으 수직 방향으로 바벨을 밀어 올립니다.
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="link_area">
+    
+                    <a href="#" type="button" class="link">유튜브 검색하기</a>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    </div>
+
+    <section id="u_exer" class="page">
+
+        <div class="pd15">
+    
+    
+    
+            <div class="sw_area mySwiper2">
+    
+                <ul class="sw_ul swiper-wrapper">
+    
+                    <li class="sw_li swiper-slide on">전체</li>
+    
+                    <li class="sw_li swiper-slide">즐겨찾기</li>
+    
+                    <li class="sw_li swiper-slide">하체</li>
+    
+                    <li class="sw_li swiper-slide">가슴</li>
+    
+                    <li class="sw_li swiper-slide">등</li>
+    
+                    <li class="sw_li swiper-slide">어깨</li>
+    
+                    <li class="sw_li swiper-slide">기타</li>
+    
+                </ul>
+    
+            </div>
+    
+            <script>
+    
+                var swiper = new Swiper(".mySwiper2", {
+    
+                    slidesPerView:"auto",
+    
+                    spaceBetween: 8,
+    
+                    // slidesPerGroup: 1,
+    
+                    observer: true,
+    
+                    observeParents: true,
+    
+                    // centeredSlides: true,  
+    
+                });
+    
+    
+    
+                $('.sw_li').click(function(){
+    
+                    $('.sw_li').removeClass('on');
+    
+                    $(this).addClass('on');
+    
+                });
+    
+            </script>
+    
+    
+    
+            <!--즐겨찾기 없을때-->
+    
+            <div class="no_list">즐겨찾기한 운동이 없습니다.</div>
+    
+            <!--즐겨찾기 없을때-->
+    
+    
+    
+            <div class="yes_list on">
+    
+                <div class="ex_wrap">
+    
+    
+    
+                    <div class="v_block on">
+    
+                        <input type="checkbox" name="e_v" id="e_v1" class="ck_v">
+    
+                        <label for="e_v1" class="v_lab vt_mid">벤치 프레스</label>
+    
+    
+    
+                        <div class="act_wrap">
+    
+                            <button type="button" class="i_btn">
+    
+                                <img src="../../img/i_btn.png">
+    
+                            </button>
+    
+                            <input type="checkbox" name="bookmark" id="bookmark1" class="bookmark">
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="v_block on">
+    
+                        <input type="checkbox" name="e_v" id="e_v2" class="ck_v">
+    
+                        <label for="e_v2" class="v_lab vt_mid">벤치 프레스</label>
+    
+    
+    
+                        <div class="act_wrap">
+    
+                            <button type="button" class="i_btn">
+    
+                                <img src="../../img/i_btn.png">
+    
+                            </button>
+    
+                            <input type="checkbox" name="bookmark" id="bookmark1" class="bookmark" checked>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="v_block on">
+    
+                        <input type="checkbox" name="e_v" id="e_v3" class="ck_v">
+    
+                        <label for="e_v3" class="v_lab vt_mid">벤치 프레스</label>
+    
+    
+    
+                        <div class="act_wrap">
+    
+                            <button type="button" class="i_btn">
+    
+                                <img src="../../img/i_btn.png">
+    
+                            </button>
+    
+                            <input type="checkbox" name="bookmark" id="bookmark1" class="bookmark">
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="v_block on">
+    
+                        <input type="checkbox" name="e_v" id="e_v4" class="ck_v">
+    
+                        <label for="e_v4" class="v_lab vt_mid">벤치 프레스</label>
+    
+    
+    
+                        <div class="act_wrap">
+    
+                            <button type="button" class="i_btn">
+    
+                                <img src="../../img/i_btn.png">
+    
+                            </button>
+    
+                            <input type="checkbox" name="bookmark" id="bookmark1" class="bookmark">
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="v_block on">
+    
+                        <input type="checkbox" name="e_v" id="e_v5" class="ck_v">
+    
+                        <label for="e_v5" class="v_lab vt_mid">벤치 프레스</label>
+    
+    
+    
+                        <div class="act_wrap">
+    
+                            <button type="button" class="i_btn">
+    
+                                <img src="../../img/i_btn.png">
+    
+                            </button>
+    
+                            <input type="checkbox" name="bookmark" id="bookmark1" class="bookmark" checked>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </div>
+    
+    
+    
+                <div class="page_wrap mb30">
+    
+                    <button type="button" class="p_btns prev">
+    
+                        <img src="../../img/btn_prev.png" alt="이전 페이지로">
+    
+                    </button>
+    
+                    <div class="num_wrap vt_mid">
+    
+                        <a href="" class="num">1</a>
+    
+                        <a href="" class="num on">2</a>
+    
+                        <a href="" class="num">3</a>
+    
+                    </div>
+    
+                    <button type="button" class="p_btns next">
+    
+                        <img src="../../img/btn_next.png" alt="다음 페이지로">
+    
+                    </button>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="btn_fixed">
+    
+                <button type="button" class="btn_common gray">운동을 선택해주세요</button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <script>
+
+
+
+        $('input[name="e_v"]').change(function(){
+    
+            $('#u_exer .btn_common').removeClass('gray');
+    
+            $('#u_exer .btn_common').text('운동 추가');
+    
+        });
+    
+    
+    
+        $('#u_exer .btn_common').click(function(){
+    
+            if($(this).text() == "운동 추가"){
+    
+                location.href='us_exercise.html';
+    
+            }
+    
+        })
+    
+    
+    
+        $('#u_exer .act_wrap .i_btn').click(function(){
+    
+            $('.b_pop').addClass('on');
+    
+            
+    
+            var bpHeight = $('.b_pop .blue_bg').outerHeight(true);
+    
+            // console.log(bpHeight)
+    
+            $('.b_pop .blue_bg').css({'bottom' : - bpHeight + 'px'});
+    
+    
+    
+            $('.b_pop .blue_bg').animate({'bottom' : '0'}, 500);
+    
+        });
+    
+    
+    
+    
+    
+        //즐겨찾기 삭제 팝업
+    
+        // $('.pop2').addClass('on');
+    
+        // $('.pop2 .p_h2').text('즐겨찾기에서 삭제하시겠습니까?');
+    
+        // $('.pop2 .p_btns.btn2').text('삭제');
+    
+    
+    
+    </script>
+
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header s_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">직원 등록</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+
+    <section id="add_staff" class="form">
+
+        <div class="pd15">
+    
+            <form>
+    
+                <div class="e_wrap">
+    
+    
+    
+                    <div class="e_block">
+    
+                        <input type="checkbox" name="new_event" id="new_event" class="ck_v">
+    
+                        <label for="new_event" class="e2_lab">신규회원 무료 PT 진행</label>
+    
+                    </div>
+    
+    
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">급여</label>
+    
+    
+    
+                        <div class="mb10">
+    
+                            <div class="m10_left vt_mid">
+    
+                                <input type="radio" name="pay1" id="pay1" class="ck_v" checked>
+    
+                                <label for="pay1" class="e2_lab">고정 시급</label>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="mb10">
+    
+                            <div class="m10_left vt_mid">
+    
+                                <input type="radio" name="pay1" id="pay1" class="ck_v">
+    
+                                <label for="pay1" class="e2_lab">고정 월급</label>
+    
+                            </div>
+    
+                            <div class="m10_right vt_mid">
+    
+                                <input type="text" name="mon_pay" id="mon_pay" class="ip" value="3,000,000">
+    
+                                <span class="txt">원</span>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="e_block">
+    
+                        <label class="e_lab">급여</label>
+    
+    
+    
+                        <div class="mb10">
+    
+                            <div class="m10_left vt_mid">
+    
+                                <input type="radio" name="m_pay" id="m_pay1" class="ck_v">
+    
+                                <label for="m_pay1" class="e2_lab">전직원 수업정산금의</label>
+    
+                            </div>
+    
+                            <div class="m10_right vt_mid">
+    
+                                <input type="text" name="mon_pay" id="mon_pay" class="ip" value="20">
+    
+                                <span class="txt">%</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="mb10">
+    
+                            <div class="m10_left vt_mid">
+    
+                                <input type="radio" name="m_pay" id="m_pay2" class="ck_v">
+    
+                                <label for="m_pay2" class="e2_lab">매장전체 오더매출의</label>
+    
+                            </div>
+    
+                            <div class="m10_right vt_mid">
+    
+                                <input type="text" name="mon_pay" id="mon_pay" class="ip" value="0">
+    
+                                <span class="txt">%</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="mb10">
+    
+                            <div class="m10_left vt_mid">
+    
+                                <input type="radio" name="m_pay" id="m_pay3" class="ck_v">
+    
+                                <label for="m_pay3" class="e2_lab">매장전체 헬스매출의</label>
+    
+                            </div>
+    
+                            <div class="m10_right vt_mid">
+    
+                                <input type="text" name="mon_pay" id="mon_pay" class="ip" value="0">
+    
+                                <span class="txt">%</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="mb10">
+    
+                            <div class="m10_left vt_mid">
+    
+                                <input type="radio" name="m_pay" id="m_pay4" class="ck_v">
+    
+                                <label for="m_pay4" class="e2_lab">매장전체 PT매출의</label>
+    
+                            </div>
+    
+                            <div class="m10_right vt_mid">
+    
+                                <input type="text" name="mon_pay" id="mon_pay" class="ip" value="0">
+    
+                                <span class="txt">%</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                    </div>
+    
+    
+    
+                    <!-- <div class="e_block">
+    
+                        <label class="e_lab">수업가능시간</label>
+    
+                        
+    
+                        <div class="time_wrap">
+    
+                            <div class="day">
+    
+                                <div class="t_left wid100 vt_mid">
+    
+                                    <div class="tl_top">
+    
+                                        <div class="tt_left vt_mid">월요일</div>
+    
+                                        <div class="tt_right vt_mid">
+    
+                                            <input type="checkbox" name="h_day" id="h_day1" class="ck">
+    
+                                            <label for="h_day1" class="h_lab">휴무일</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="20%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="50%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="70%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left wid100 vt_mid">
+    
+                                    <div class="tl_top">
+    
+                                        <div class="tt_left vt_mid">화요일</div>
+    
+                                        <div class="tt_right vt_mid">
+    
+                                            <input type="checkbox" name="h_day" id="h_day2" class="ck">
+    
+                                            <label for="h_day2" class="h_lab">휴무일</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="20%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="50%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="70%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left wid100 vt_mid">
+    
+                                    <div class="tl_top">
+    
+                                        <div class="tt_left vt_mid">수요일</div>
+    
+                                        <div class="tt_right vt_mid">
+    
+                                            <input type="checkbox" name="h_day" id="h_day3" class="ck">
+    
+                                            <label for="h_day3" class="h_lab">휴무일</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="20%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="50%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="70%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left wid100 vt_mid">
+    
+                                    <div class="tl_top">
+    
+                                        <div class="tt_left vt_mid">목요일</div>
+    
+                                        <div class="tt_right vt_mid">
+    
+                                            <input type="checkbox" name="h_day" id="h_day4" class="ck">
+    
+                                            <label for="h_day4" class="h_lab">휴무일</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="20%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="50%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="70%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left wid100 vt_mid">
+    
+                                    <div class="tl_top">
+    
+                                        <div class="tt_left vt_mid">금요일</div>
+    
+                                        <div class="tt_right vt_mid">
+    
+                                            <input type="checkbox" name="h_day" id="h_day5" class="ck">
+    
+                                            <label for="h_day5" class="h_lab">휴무일</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="20%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="50%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="70%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left wid100 vt_mid">
+    
+                                    <div class="tl_top">
+    
+                                        <div class="tt_left vt_mid">토요일</div>
+    
+                                        <div class="tt_right vt_mid">
+    
+                                            <input type="checkbox" name="h_day" id="h_day6" class="ck">
+    
+                                            <label for="h_day6" class="h_lab">휴무일</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="20%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="50%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="70%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="day">
+    
+                                <div class="t_left wid100 vt_mid">
+    
+                                    <div class="tl_top">
+    
+                                        <div class="tt_left vt_mid">일요일</div>
+    
+                                        <div class="tt_right vt_mid">
+    
+                                            <input type="checkbox" name="h_day" id="h_day7" class="ck">
+    
+                                            <label for="h_day7" class="h_lab">휴무일</label>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="20%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="50%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="tl_bot">
+    
+                                            <select class="wid108 select">
+    
+                                                <option>11:00</option>
+    
+                                                <option>12:00</option>
+    
+                                                <option>13:00</option>
+    
+                                            </select>
+    
+                                            <span class="gap vt_mid">~</span>
+    
+                                            <select class="wid108 select">
+    
+                                                <option>21:00</option>
+    
+                                                <option>22:00</option>
+    
+                                                <option>23:00</option>
+    
+                                            </select>
+    
+                                            <div class="tr_bot vt_mid trbot2">
+    
+                                                <input type="text" name="per1" id="per1" class="ip2" value="70%">
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div> -->
+    
+                </div>
+    
+    
+    
+                <div class="btn_fixed">
+    
+                    <button type="button" class="btn_common gray">저장</button>
+    
+                </div>
+    
+            </form>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    
+    
+    <script>
+    
+    
+    
+        //변경사항 있으면 저장버튼 활성화
+    
+        $('#add_staff input').change(function(){
+    
+            $('#add_staff .btn_common').removeClass('gray');
+    
+        });
+    
+    
+    
+        $('#add_staff .btn_common').click(function(){
+    
+            if($(this).hasClass('gray')){
+    
+    
+    
+            }else{
+    
+                $('.pop1').addClass('on');
+    
+                $('.pop1 .p_h2').text("등록이 완료되었습니다.");
+    
+            }
+    
+        });
+    
+    
+    
+        $('.pop1 .p_btn').click(function(){
+    
+            location.href='st_people.html';
+    
+        });
+    
+        
+    
+        //휴무일 체크되면 disabled
+    
+        $('input[name="h_day"]').change(function(){
+    
+            if($(this).is(":checked")){
+    
+                $(this).parents().next('div').children('.tl_bot').children('select').prop("disabled", true);
+    
+                $(this).parents().next('div').children('.tl_bot').children('.tr_bot').children('input').prop("disabled", true);
+    
+            }else{
+    
+                $(this).parents().next('div').children('.tl_bot').children('select').prop("disabled", false);
+    
+                $(this).parents().next('div').children('.tl_bot').children('.tr_bot').children('input').prop("disabled", false);
+    
+            }
+    
+        });
+    
+    
+    
+    </script>
+
+
+
+</body>
+
+</html>

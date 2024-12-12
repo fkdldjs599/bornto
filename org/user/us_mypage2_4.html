@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">포인트</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="pop p_detail">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="white_bg">
+    
+    
+    
+            <h2 class="pd_h2">결제 상세</h2>
+    
+    
+    
+            <div class="det_list">
+    
+                <div class="d_block">
+    
+                    <div class="db_left vt_mid">상품명</div>
+    
+                    <div class="db_right vt_mid">정기 구독 베이직</div>
+    
+                </div>
+    
+                <div class="d_block">
+    
+                    <div class="db_left vt_mid">금액</div>
+    
+                    <div class="db_right vt_mid">39,900원</div>
+    
+                </div>
+    
+                <div class="d_block">
+    
+                    <div class="db_left vt_mid">결제일</div>
+    
+                    <div class="db_right vt_mid">
+    
+                        <span class="vt_mid black">2024. 05. 31</span> 
+    
+                        <span class="vt_mid gray">17:28:13</span>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="d_block">
+    
+                    <div class="db_left vt_mid">결제수단</div>
+    
+                    <div class="db_right vt_mid">국민카드 ************3505</div>
+    
+                </div>
+    
+                <div class="d_block">
+    
+                    <div class="db_left vt_mid">사용지점</div>
+    
+                    <div class="db_right vt_mid">본투짐 본점</div>
+    
+                </div>
+    
+                <div class="d_block">
+    
+                    <div class="db_left vt_mid">주소</div>
+    
+                    <div class="db_right vt_mid">인천 연수구 송도동 송도과학로 32  </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="btns_area">
+    
+                <button type="button" class="btns btn1">닫기</button>
+    
+                <button type="button" class="btns btn2">다운받기</button>
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    </div>
+
+    <!-- 추천인코드 -->
+    <div class="pop r_code">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="white_bg">
+    
+    
+    
+            <h2 class="rc1">내 추천인 코드</h2>
+    
+            <textarea class="rc2" readonly>3yklt3</textarea>
+    
+            <div class="rc3">친구 가입시 내 추천인 코드를 입력하면<br>가입시 친구와 나 모두 1,000P를 받고<br>내 페이백 포인트 10%를 추천인도 함께 받아요</div>
+    
+            <div class="rc4">
+    
+                <button type="button" class="c_btn">
+    
+                    <img src="../../img/c_btn.png" alt="복사">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btn">닫기</button>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <section id="us_mypage" class="page mymoney">
+
+
+
+        <div class="my_top">
+    
+            <div class="pd15">
+    
+                <h2 class="trmy_h2">
+    
+                    내 포인트
+    
+                    <div class="ck_wrap">
+    
+                        <label class="ck_lab" for="auto_pay">정기 결제시 자동 사용</label>
+    
+                        <input type="checkbox" name="auto_pay" id="auto_pay" class="ck_vo">
+    
+                    </div>
+    
+                </h2>
+    
+                <div class="my_money">1,000원</div>
+    
+                <button type="button" class="go_outmoney">추천인 코드</button>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+        <div class="my_bot">
+    
+            <div class="pd15">
+    
+                <h2 class="trmy_h2">포인트 내역</h2>
+    
+    
+    
+                <ul class="ul_3">
+    
+                    <li class="li_3 on">전체</li>
+    
+                    <li class="li_3">적립</li>
+    
+                    <li class="li_3">사용</li>
+    
+                </ul>
+    
+    
+    
+                <div class="m_list">
+    
+                    <!--
+    
+                        적립 = in
+    
+                        사용 = out
+    
+                    -->
+    
+                    <div class="border in on">
+    
+                        <div class="bd_top">
+    
+                            <div class="bd_left vt_mid">2월 출석 리워드</div>
+    
+                            <div class="bd_right vt_mid">+1,000P</div>
+    
+                        </div>
+    
+                        <div class="bd_bot">
+    
+                            <div class="bd_left vt_mid">2024. 05. 31</div>
+    
+                            <div class="bd_right vt_mid blue">적립</div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="border out on">
+    
+                        <div class="bd_top">
+    
+                            <div class="bd_left vt_mid">수강권 결제시 사용</div>
+    
+                            <div class="bd_right vt_mid">-300P</div>
+    
+                        </div>
+    
+                        <div class="bd_bot">
+    
+                            <div class="bd_left vt_mid">2024. 05. 31</div>
+    
+                            <div class="bd_right vt_mid blue">사용</div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="border in on">
+    
+                        <div class="bd_top">
+    
+                            <div class="bd_left vt_mid">추천인 이벤트 </div>
+    
+                            <div class="bd_right vt_mid">+500P</div>
+    
+                        </div>
+    
+                        <div class="bd_bot">
+    
+                            <div class="bd_left vt_mid">2024. 05. 31</div>
+    
+                            <div class="bd_right vt_mid blue">적립</div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="border in on">
+    
+                        <div class="bd_top">
+    
+                            <div class="bd_left vt_mid">가입 축하 포인트</div>
+    
+                            <div class="bd_right vt_mid">+100원</div>
+    
+                        </div>
+    
+                        <div class="bd_bot">
+    
+                            <div class="bd_left vt_mid">2024. 05. 31</div>
+    
+                            <div class="bd_right vt_mid blue">적립</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="page_wrap">
+    
+                    <button type="button" class="p_btns prev">
+    
+                        <img src="../../img/btn_prev.png" alt="이전 페이지로">
+    
+                    </button>
+    
+                    <div class="num_wrap vt_mid">
+    
+                        <a href="" class="num">1</a>
+    
+                        <a href="" class="num on">2</a>
+    
+                        <a href="" class="num">3</a>
+    
+                    </div>
+    
+                    <button type="button" class="p_btns next">
+    
+                        <img src="../../img/btn_next.png" alt="다음 페이지로">
+    
+                    </button>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </section>
+    
+    
+    
+    <script>
+    
+        $('.li_3').click(function(){
+    
+            $('.li_3').removeClass('on');
+
+            $(this).addClass('on');
+
+            $('.m_list .border').removeClass('on');
+
+            var idx = $(this).index();
+
+            if(idx == '0') {
+                $('.m_list .border').addClass('on');
+
+            }else if(idx == '1') {
+                $('.m_list .in').addClass('on');
+
+            }else if(idx == '2') {
+                $('.m_list .out').addClass('on');
+
+            }
+    
+        });
+    
+    
+    
+        $('.go_outmoney').click(function(){
+    
+            $('.r_code').addClass('on');
+    
+        });
+    
+    
+    
+        $('.r_code .c_btn').click(function(){
+    
+            $("textarea").select();
+    
+            document.execCommand('copy');
+    
+            alert("코드가 복사되었습니다.");
+    
+        });
+    
+    
+    
+    </script>
+
+
+    <footer class="footer">
+        <a href="us_index.html" class="foot_a">
+            <img src="../../img/nav1_st.png">
+            <div class="foot_t">홈</div>
+        </a>
+        <a href="us_schedule.html" class="foot_a">
+            <img src="../../img/nav2_st.png">
+            <div class="foot_t">수업</div>
+        </a>
+        <a href="us_exercise.html" class="foot_a">
+            <img src="../../img/nav3_us.png">
+            <div class="foot_t">운동</div>
+        </a>
+        <a href="us_food.html" class="foot_a">
+            <img src="../../img/nav4_us.png">
+            <div class="foot_t">식단</div>
+        </a>
+        <a href="us_mypage.html" class="foot_a on">
+            <img src="../../img/nav5_st_on.png">
+            <div class="foot_t">마이</div>
+        </a>
+    </footer>
+    
+    
+</body>
+
+</html>

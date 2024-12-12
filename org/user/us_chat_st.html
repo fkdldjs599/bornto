@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">채팅</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 신고하기 -->
+    <div class="pop2 refpop">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="white_bg">
+    
+    
+    
+            <h2 class="p_h2">신고하기 </h2>
+    
+    
+    
+            <div class="ref_name"><span class="fw500">신고 대상자:</span> 사용자이름</div>
+    
+    
+    
+            <div class="ref_list">
+    
+                <div class="rf_block">
+    
+                    <input type="checkbox" name="ref" id="ref1" class="ck_v">
+    
+                    <label for="ref1" class="lab">상업적/홍보성</label>
+    
+                </div>
+    
+                <div class="rf_block">
+    
+                    <input type="checkbox" name="ref" id="ref2" class="ck_v">
+    
+                    <label for="ref2" class="lab">음란성</label>
+    
+                </div>
+    
+                <div class="rf_block">
+    
+                    <input type="checkbox" name="ref" id="ref3" class="ck_v">
+    
+                    <label for="ref3" class="lab">욕설 및 비방</label>
+    
+                </div>
+    
+                <div class="rf_block">
+    
+                    <input type="checkbox" name="ref" id="ref4" class="ck_v">
+    
+                    <label for="ref4" class="lab">개인정보 노출</label>
+    
+                </div>
+    
+                <div class="rf_block">
+    
+                    <input type="checkbox" name="ref" id="ref5" class="ck_v">
+    
+                    <label for="ref5" class="lab">도배성</label>
+    
+                </div>
+    
+                <div class="rf_block">
+    
+                    <input type="checkbox" name="ref" id="ref6" class="ck_v">
+    
+                    <label for="ref6" class="lab">기타</label>
+    
+                    <textarea class="rf_textarea"></textarea>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btns btn1">취소</button>
+    
+                <button type="button" class="p_btns btn2">신고</button>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <section id="chat" class="chat st_talk">
+
+        <div class="chat_area">
+    
+            <div class="pd15">
+    
+                <div class="date_area">2024.05.31 (금)</div>
+    
+    
+    
+                <div class="chat_mg stchat">
+    
+                    <div class="chat_box other"><!--상대방-->
+    
+                        <div class="stchat_top">
+    
+                            <div class="sc1 vt_mid">사용자이름</div>
+    
+                            <div class="sc2 vt_mid">2024. 05.31 1:15</div>
+    
+                            <div class="sc3 vt_mid">
+    
+                                <button type="button" class="rep_btn">신고</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="text vt_top">
+    
+                            <div class="t_text vt_bot">오늘도 모두 운동 화이팅하세요!</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="chat_mg stchat">
+    
+                    <div class="chat_box other"><!--상대방-->
+    
+                        <div class="stchat_top">
+    
+                            <div class="sc1 vt_mid">사용자이름</div>
+    
+                            <div class="sc2 vt_mid">2024. 05.31 1:15</div>
+    
+                            <div class="sc3 vt_mid">
+    
+                                <button type="button" class="rep_btn">신고</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="text vt_top">
+    
+                            <div class="t_text vt_bot">오늘 헬스장 사람이 많네요22</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="chat_mg stchat">
+    
+                    <div class="chat_box other"><!--상대방-->
+    
+                        <div class="stchat_top">
+    
+                            <div class="sc1 vt_mid">사용자이름</div>
+    
+                            <div class="sc2 vt_mid">2024. 05.31 1:15</div>
+    
+                            <div class="sc3 vt_mid">
+    
+                                <button type="button" class="rep_btn">신고</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="text vt_top">
+    
+                            <div class="t_text vt_bot">오늘 하체하시는 분 같이 봐주면서 해요</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="chat_mg stchat">
+    
+                    <div class="chat_box other"><!--상대방-->
+    
+                        <div class="stchat_top">
+    
+                            <div class="sc1 vt_mid">사용자이름</div>
+    
+                            <div class="sc2 vt_mid">2024. 05.31 1:15</div>
+    
+                            <div class="sc3 vt_mid">
+    
+                                <button type="button" class="rep_btn">신고</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="text vt_top">
+    
+                            <div class="t_text vt_bot">5kg 감량 성공! 홍길동 트레이너님 감사해요</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="chat_mg stchat">
+    
+                    <div class="chat_box other"><!--상대방-->
+    
+                        <div class="stchat_top">
+    
+                            <div class="sc1 vt_mid">사용자이름</div>
+    
+                            <div class="sc2 vt_mid">2024. 05.31 1:15</div>
+    
+                            <div class="sc3 vt_mid">
+    
+                                <button type="button" class="rep_btn">신고</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="text vt_top">
+    
+                            <div class="t_text vt_bot">오늘 헬스장 사람이 많네요</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="chat_mg stchat">
+    
+                    <div class="chat_box my"><!--나-->
+    
+                        <div class="stchat_top">
+    
+                            <div class="sc2 vt_mid">2024. 05.31 1:15</div>
+    
+                        </div>
+    
+                        <div class="text vt_top">
+    
+                            <div class="t_text vt_bot">오늘도 모두 운동 화이팅하세요!</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+            </div>
+    
+    
+    
+            <div class="fix_area">
+    
+                <!-- <div class="a_right">
+    
+                    <button type="button" class="chat_btn1">
+    
+                        <img src="/img/btn_down.png">
+    
+                    </button>
+    
+                </div> -->
+    
+    
+    
+                <div class="pd15">
+    
+                    <div class="vt_mid input_wrap">
+    
+                        <input type="text" name="chat" id="chat" class="c_input" placeholder="메세지를 입력하세요">
+    
+    
+    
+                        <!-- <input type="file" name="upload" id="upload" class="file">
+    
+                        <label for="upload" class="chat_btn2">
+    
+                            <img src="/img/btn_upload.png">
+    
+                        </label> -->
+    
+                    </div>
+    
+                    <button type="button" class="send_btn vt_mid">전송</button>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+        $('.header.u_head .chat_out').click(function(){
+    
+            $('.pop2').addClass('on');
+    
+            $('.pop2 .p_h2').html("톡방을 나가시겠습니까?<div class='sub'>톡방을 나가면 목록에서 삭제됩니다.</div>");
+    
+            $('.pop2 .p_btns.btn2').text('나가기');
+    
+            $('.refpop').removeClass('on');
+    
+        });
+    
+        $('.pop2 .btn2').click(function(){
+    
+            if($(this).text() == "나가기"){
+    
+                location.href='us_chat_list.html';
+    
+            }else if($(this).text() == "신고"){
+    
+                $('.refpop').removeClass('on');
+    
+                $('.pop1').addClass('on');
+    
+                $('.pop1 .p_h2').html("신고가 완료되었습니다.");
+    
+            }
+    
+        });
+    
+    
+    
+        $('.rep_btn').click(function(){
+    
+            $('.refpop').addClass('on');
+    
+        });
+    
+    
+    
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header u_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">등록 계좌</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb1_1">
+                <img src="../../img/icon_pay.png" alt="멤버쉽 구매">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 음식 팝업 -->
+    <div class="b_pop fdpop">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="blue_bg">
+    
+    
+    
+            <div class="bp_title">
+    
+                <h2 class="p_h2 vt_mid">영양소 상세</h2>
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="../../img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="bp_con">
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">총 용량</h3>
+    
+                        <div class="bp_div vt_mid">100g</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">칼로리</h3>
+    
+                        <div class="bp_div vt_mid">100kcal</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">탄수화물</h3>
+    
+                        <div class="bp_div vt_mid">0g</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-당</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-대체 감미료</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-식이섬유</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">단백질</h3>
+    
+                        <div class="bp_div vt_mid">20g</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">지방</h3>
+    
+                        <div class="bp_div vt_mid">2g</div>
+    
+                    </div>
+    
+                    <div class="bp_line">
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-포화지방</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-트랜스지방</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-다불포화지방</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                        <div class="sub_line">
+    
+                            <h3 class="bp_h3 vt_mid">-불포화지방</h3>
+    
+                            <div class="bp_div vt_mid">0g</div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">콜레스테롤</h3>
+    
+                        <div class="bp_div vt_mid">80mg</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">나트륨</h3>
+    
+                        <div class="bp_div vt_mid">45mg</div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bp_block">
+    
+                    <div class="bp_line">
+    
+                        <h3 class="bp_h3 vt_mid">칼륨</h3>
+    
+                        <div class="bp_div vt_mid">371mg</div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    </div>
+
+
+    <section id="pay_new" class="form">
+
+
+
+        <form>
+    
+            <div class="pb_wrap">
+    
+    
+    
+            <div class="pd15">
+    
+                <div class="ob_wrap">
+    
+                    <div class="out_block">
+    
+                        <label class="out_lab">은행</label>
+    
+                        <select name="bank" id="bank" class="slt2 input">
+    
+                            <option>국민은행</option>
+    
+                            <option>우리은행</option>
+    
+                            <option>신한은행</option>
+    
+                        </select>
+    
+                    </div>
+    
+                    <div class="out_block">
+    
+                        <label class="out_lab">계좌번호</label>
+    
+                        <input type="number" name="bank_num" id="bank_num" class="input" placeholder="계좌번호 입력('-' 제외)">
+    
+                    </div>
+    
+                    <div class="out_block">
+    
+                        <label class="out_lab">예금주</label>
+    
+                        <input type="text" name="bank_name" id="bank_name" class="input" placeholder="이름">
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            </div>
+    
+    
+    
+            <div class="btn_fixed">
+    
+                <button type="button" class="btn_common gray">등록</button>
+    
+            </div>
+    
+    
+    
+        </form>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+    
+    
+        $('#pay_new #bank_name').change(function(){
+    
+            $('#pay_new .btn_common').removeClass('gray');
+    
+        });
+    
+        $('#pay_new .btn_common').click(function(){
+    
+            if($(this).hasClass('gray')){
+    
+    
+    
+            }else{
+    
+                history.go(-1);
+    
+            }
+    
+        });
+    
+    
+    
+    </script>
+
+</body>
+
+</html>

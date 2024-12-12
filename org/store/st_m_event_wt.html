@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 서명하기 -->
+    <div class="pop signpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">서명</h2>
+    
+                <div class="wt_area">
+                    <div class="sign"></div>
+                </div>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큐알코드 -->
+    <div class="pop qrpop">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+            <div class="close_area">
+                <button type="button" class="close_btn">
+                    <img src="../../img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="qr_con">
+                <h2 class="qr_h2">QR코드를 스캔해주세요.</h2>
+                <div class="center">
+                    <div class="border">
+                        <img src="../../img/qr_img.png" alt="QRCODE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop2">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2">해당 문의를 삭제하시겠습니까?</h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <div class="white_bg">
+    
+            <div class="pd12">
+                <h2 class="p_h2"></h2>
+            </div>
+    
+            <div class="p_btnarea">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 이미지확인하기 -->
+    <div class="pop imgup">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="white_bg">
+    
+    
+    
+            <div class="pd12">
+    
+                <h2 class="p_h2">
+    
+                    이미지 확인하기
+    
+                    <div class="swiper-pagination"></div>
+    
+                </h2>
+    
+    
+    
+                <div class="mySwiper img_div">
+    
+                    <ul class="swiper-wrapper img_ul">
+    
+                        <li class="swiper-slide img_li">
+    
+                            <div class="grid">
+    
+                                <img src="../../img/ban.png" alt="이벤트">
+    
+                            </div>
+    
+                        </li>
+    
+                        <li class="swiper-slide img_li">
+    
+                            <div class="grid">
+    
+                                <img src="../../img/ban.png" alt="이벤트">
+    
+                            </div>
+    
+                        </li>
+    
+                        <li class="swiper-slide img_li">
+    
+                            <div class="grid">
+    
+                                <img src="../../img/ban.png" alt="이벤트">
+    
+                            </div>
+    
+                        </li>
+    
+                    </ul>
+    
+                </div>
+    
+                <script>
+    
+                    var swiper = new Swiper(".mySwiper", {
+    
+                        slidesPerView:"auto",
+    
+                        spaceBetween: 19,
+    
+                        // slidesPerGroup: 1,
+    
+                        observer: true,
+    
+                        observeParents: true,
+    
+                        centeredSlides: true,
+    
+                        pagination: {
+    
+                            el: ".swiper-pagination",
+    
+                            type: "fraction",
+    
+                        },
+    
+                    });
+    
+                </script>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btn">확인</button>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <header class="header s_head">
+        <div class="h_left vt_mid">
+            <button class="back" onclick="history.go(-1);">
+                <img src="../..//img/back.png" alt="뒤로가기">
+            </button>
+        </div>
+        <hl class="h_name vt_mid">이벤트 관리</hl>
+
+        <div class="h_right vt_mid">
+            <button type="button" class="r_btn rb1">
+                <img src="../../img/icon_qr.png" alt="QR CODE">
+            </button>
+            <button type="button" class="r_btn rb2">
+                <img src="../../img/icon_chat.png" alt="채팅">
+                <span class="r_span">1</span>
+            </button>
+            <button type="button" class="r_btn rb3">
+                <img src="../../img/icon_alarm.png" alt="알림">
+                <span class="r_span">1</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="m_event_wt" class="form">
+
+        <div class="pd15">
+    
+            <form>
+    
+                <div class="wt_block">
+    
+                    <label for="title" class="wt_lab">제목</label>
+    
+                    <input type="text" name="title" id="title" class="text">
+    
+                </div>
+    
+    
+    
+                <div class="wt_block">
+    
+                    <label class="wt_lab">
+    
+                        <div class="fs0">
+    
+                            <span class="vt_mid left">이미지</span>
+    
+                            <span class="vt_mid right">이미지 확인하기</span>
+    
+                        </div>
+    
+                    </label>
+    
+                    <input type="file" name="customFile" id="customFile" class="file" multiple>
+    
+                    <label for="customFile" class="btn_common2">이미지 업로드</label>
+    
+                </div>
+    
+    
+    
+                <div class="wt_block">
+    
+                    <label for="contents" class="wt_lab">내용</label>
+    
+                    <textarea id="contents" class="textarea"></textarea>
+    
+                </div>
+    
+    
+    
+                <div class="btn_fixed">
+    
+                    <button type="button" class="btn_common" onclick="history.go(-1);">업로드</button>
+    
+                </div>
+    
+            </form>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <script>
+    
+        $('.wt_block .fs0 .right').click(function(){
+    
+            $('.imgup').addClass('on');
+    
+        });
+    
+    </script>
+
+
+</body>
+
+</html>
