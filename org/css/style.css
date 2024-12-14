@@ -3697,7 +3697,7 @@ input.rd_o:checked {background-image: url("../../img/radio_o_on.png");}
 
 .shpop .white_bg .sh_con .sh_ul .sh_li {border-top: 0.2778vw solid #999999; box-sizing: border-box; padding: 4.1667vw 5.5556vw; font-size: 3.8889vw; cursor: pointer; text-align: left;}
 
-.chat .chat_area .chat_box.my .text .t_text .sh_link {color: #fff; padding-bottom: 0.5556vw; box-sizing: border-box;}
+.chat .chat_area .chat_box.my .text .t_text .sh_link {color: #fff; padding-bottom: 0.5556vw; box-sizing: border-box; font-size: 3.8889vw;}
 
 .chat .chat_area .chat_box.my .text .t_text .sh_link::after {content: ""; display: inline-block; width: 4.1667vw; height: 5.0000vw; background: url("../../img/icon_share.png") no-repeat center center / 100% 100%; margin-left: 1.9444vw; vertical-align: sub;}
 
